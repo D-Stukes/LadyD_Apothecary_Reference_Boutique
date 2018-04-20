@@ -7,27 +7,25 @@ const app = express();
 // const pgp = require('pg-promise');
 const path = require('path');
 
-//setup connections to student and house routers
-const studentsRouter = require('./boutiRouters/studentsRouter');
-const houseRouter = require('./hogwartsRouters/houseRouter');
+//setting up router
+const boutiqueRouter = require('./router/boutiqueRouter');
 
-// setup middleware
+// setting up middleware
 app.use(logger('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-// setup middleware for views functionality
+// setting up middleware for views functionality
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res) => {
-  // res.send('hello there');
-  res.render('home/index');
+  // res.send('hi');
+  res.render('index');
 });
 
-app.use('/students', studentsRouter);
-app.use('/houses', houseRouter);
+app.use('/products', productsRouter);
 
 app.listen(PORT, () => {
 console.log(`Listening on port ${PORT}`);

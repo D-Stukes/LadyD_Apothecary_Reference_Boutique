@@ -4,10 +4,10 @@ const boutiqueRouter = require('express').Router();
 
 function getAllProducts(req, res, next) {
   console.log('Listing all items in Product Table');
-  bouti.listAllProducts()
+  boutiqueModels.listAllProducts()
   .then(data => {
-    console.log('There are  ' + data.length + ' students in Hogwarts. ');
-    res.locals.students = data;
+    console.log('There are  ' + data.length + ' items in the Products table. ');
+    res.locals.products = data;
     next();
   })
   .catch(err => {
@@ -15,14 +15,14 @@ function getAllProducts(req, res, next) {
   })
 }
 
-function getOneStudent(req, res){
+function getOneProduct(req, res){
 console.log(req.params);
-  studentsMods.findOneStudent(req.params.id)
+  boutiqueModels.listOneProduct(req.params.id)
   .then(data => {
     console.log(data);
     res.json({
       status: 'ok',
-      student: data
+      product: data
     });
   })
   .catch(err => {
@@ -33,14 +33,14 @@ console.log(req.params);
   })
 }
 
-function createStudent(req, res){
+function createProduct(req, res){
 console.log(req.body);
-  studentsMods.addStudent(req.body)
+  boutiqueModels.addProduct(req.body)
   .then(data => {
     console.log(data);
     res.json({
       status: 'ok',
-      student: data
+      product: data
     })
   })
   .catch(err => {
@@ -52,15 +52,15 @@ console.log(req.body);
   })
 }
 
-function updateStudent(req, res){
+function updateProduct(req, res){
  req.body.id = req.params.id;
   console.log(req.body);
-  studentsMods.updateStudent(req.body)
+  boutiqueModels.updateProduct(req.body)
   .then(data => {
     console.log(data);
     res.json({
       status: 'ok',
-      student: data
+      product: data
     })
   })
   .catch(err => {
@@ -71,14 +71,14 @@ function updateStudent(req, res){
   })
 }
 
-function destroyStudent(req, res){
+function destroyProduct(req, res){
   console.log(req.params);
-  houseMods.destroyStudent(req.params.id)
+  boutiqueModels.destroyProduct(req.params.id)
   .then(() => {
     console.log(data);
     res.json({
       status: 'ok',
-      message: `Deleted student record with id ${req.params.id}`
+      message: `Deleted product item with id ${req.params.id}`
     });
   })
   .catch(err => {
@@ -89,7 +89,7 @@ function destroyStudent(req, res){
   })
 }
 
-function showStudentError(err, req, res, next) {
+function showError(err, req, res, next) {
   res.status(500).json({
     status: 'error',
     message: err.message
@@ -97,11 +97,11 @@ function showStudentError(err, req, res, next) {
 }
 
 module.exports = {
-getAllStudents,
-getOneStudent,
-createStudent,
-updateStudent,
-destroyStudent,
-showStudentError
+getAllProducts,
+getOneProduct,
+createProduct,
+updateProduct,
+destroyProduct,
+showError
 
 }
