@@ -1,0 +1,9 @@
+  <%products.forEach((product) => { %>
+  <div class="products">
+   <h5>
+   <%=products.product_name%>
+   </h5>
+  </div>
+ <% })%>
+
+ ============================

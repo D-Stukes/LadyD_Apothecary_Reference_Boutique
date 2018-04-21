@@ -1,0 +1,14 @@
+<h2> List of Apothecary <h2>
+
+
+
+<h1>Welcome to Lady D's Apothecary Reference Boutique</h1>
+
+
+<%products.forEach((product) => { %>
+  <div class="products">
+   <h5>
+   <%=JSON.stringify(product)%>
+   </h5>
+  </div>
+ <% })%>

@@ -355,3 +355,118 @@ ladyd_apothecary_reference_boutique=# select *, categories.type from products in
  13 | Raw vitamin C    | Supplies the body with antioxidants and fights cellular rusting |    25 |           4 |  4 | supplement | supplement
 (15 rows)
 ladyd_apothecary_reference_boutique=# 
+--
+✔ ~/wdi/unit02/projects/ladyd_boutique [master ↑·4|✔] 
+22:00 $ git push origin master
+fatal: unable to access 'https://github.com/Lady-D/LadyD_Apothecary_Reference_Boutique.git/': Could not resolve host: github.com
+✘-128 ~/wdi/unit02/projects/ladyd_boutique [master ↑·4|✔] 
+22:02 $ cd ..
+✔ ~/wdi/unit02/projects [master ↑·4|✔] 
+22:02 $ git push origin master
+fatal: unable to access 'https://github.com/Lady-D/LadyD_Apothecary_Reference_Boutique.git/': Could not resolve host: github.com
+✘-128 ~/wdi/unit02/projects [master ↑·4|✔] 
+22:02 $ 
+--
+GET / 304 21.898 ms - -
+Listing all items in Product Table
+There are  15 items in the Products table. 
+[ anonymous {
+    id: 1,
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5,
+    category_id: 1 },
+  anonymous {
+    id: 2,
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7,
+    category_id: 1 },
+  anonymous {
+    id: 3,
+    product_name: 'Olive Oil',
+    description: 'Cardiovascular support',
+    price: 15,
+    category_id: 2 },
+  anonymous {
+    id: 4,
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4,
+    category_id: 3 },
+  anonymous {
+    id: 5,
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9,
+    category_id: 2 },
+  anonymous {
+    id: 6,
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7,
+    category_id: 3 },
+  anonymous {
+    id: 7,
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5,
+    category_id: 1 },
+  anonymous {
+    id: 8,
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3,
+    category_id: 1 },
+  anonymous {
+    id: 9,
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2,
+    category_id: 3 },
+  anonymous {
+    id: 10,
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12,
+    category_id: 2 },
+  anonymous {
+    id: 11,
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18,
+    category_id: 3 },
+  anonymous {
+    id: 12,
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13,
+    category_id: 3 },
+  anonymous {
+    id: 13,
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25,
+    category_id: 4 },
+  anonymous {
+    id: 14,
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30,
+    category_id: 4 },
+  anonymous {
+    id: 15,
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15,
+    category_id: 4 } ] 'res.locals.products'
+GET /products 500 63.504 ms - 1196
+Error: Failed to lookup view "products/index" in views directory "/Users/student_23/wdi/unit02/projects/ladyd_boutique/views"
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at boutiqueRouter.get (/Users/student_23/wdi/unit02/projects/ladyd_boutique/router/boutiqueRouter.js:12:9)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/route.js:137:13)
+    at boutiqueModels.listAllProducts.then.data (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/boutiqueController.js:11:5)
+    at process._tickCallback (internal/process/next_tick.js:109:7)
+--

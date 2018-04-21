@@ -3,5 +3,5 @@
 module.exports = {
   host: 'localhost',
   port: 5432,
-  database: 'ladyd_boutique'
+  database: 'ladyd_apothecary_reference_boutique'
 }
