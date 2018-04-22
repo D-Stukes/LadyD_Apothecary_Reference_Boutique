@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lady D's Apothecary Reference Boutique</title>
+</head>
+<body>
+
+
+<h1> Apothecary Add A Product Form </h1>
+
+<p> Here at Lady D's Reference Boutique, we welcome suggestions from our visitors.
+    <br><br>
+    Please feel free to add a healing item that you would like to see listed in our product line.</p>
+
+     <div id="newProduct">
+        <form action="/localhost:3000" method="post">
+            <h4>Please Tell Me Who You Are!</h4>
+            <label for="username">Name:</label>
+            <input type="text" id="username"  placeholder="Enter your full name" />
+            <label for="email">Email:</label>
+            <input type="email" id="email"  placeholder="Enter your email address" />
+            <br>
+            <br>
+
+            <h4>Enter the new healing item you would like to suggest below:</h4>
+            <!-- New Product Information--><br><br>
+            <label for="Product Name">Product Name:</label>
+
+
+            <input type="text" id="newProduct"  placeholder="Enter the name of the new healing item" />
+
+            <label for="description">Name:</label>
+            <input type="text" id="description"  placeholder="Enter a brief description" />
+            <label for="type">Product Type</label>
+            <input type="type" id="type"  placeholder="Enter a type (oil, soap, or food)" />
+
+            <label for="price">Suggested Price</label>
+            <input type="price" id="price"  placeholder="Enter a suggested price" />
+
+
+          <input type="submit" value="Submit" />
+        </form>
+</body>
+
+</html>

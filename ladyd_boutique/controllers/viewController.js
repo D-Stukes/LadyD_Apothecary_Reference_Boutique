@@ -10,11 +10,22 @@ function listOneProduct(req, res) {
  })
 }
 
+function addOneProduct(req, res) {
+  res.render('add', {
+  product: res.locals.product
+ })
+  .redirect('/index');
+}
 
+// function viewAddedProduct(req, res) {
+//   res.redirect('/index');
+// }
 
 module.exports = {
-  listAllProducts
-  // listOneProduct
+  listAllProducts,
+  listOneProduct,
+  addOneProduct
+  // viewAddedProduct
 }
 
   // (req, res) => {

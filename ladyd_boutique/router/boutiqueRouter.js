@@ -14,13 +14,15 @@ function showError(err, req, res, next) {
 
 boutiqueRouter.route('/')
 .get(boutiqueController.getAllProducts, boutiqueViewController.listAllProducts, showError)
-// .post(boutiqueController.createProduct);
+.post(boutiqueController.createProduct, boutiqueViewController.addOneProduct);
+
+boutiqueRouter.get('/new', boutiqueViewController.addOneProduct);
 
 
-// boutiqueRouter.route('/:id')
-// .get(boutiqueController.getOneProduct);
-// .put(boutiqueController.updateProduct);
-// .delete(boutiqueController.destroyProduct);
+boutiqueRouter.route('/:id')
+.get(boutiqueController.getOneProduct, boutiqueViewController.listOneProduct)
+.put(boutiqueController.updateProduct)
+.delete(boutiqueController.destroyProduct);
 
 
 module.exports = boutiqueRouter;

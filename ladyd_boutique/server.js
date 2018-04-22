@@ -4,7 +4,7 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 const PORT = 3000;
 const app = express();
-// const pgp = require('pg-promise');
+const pgp = require('pg-promise');
 const path = require('path');
 
 //setting up router

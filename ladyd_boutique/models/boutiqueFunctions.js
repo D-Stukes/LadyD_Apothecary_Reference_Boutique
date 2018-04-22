@@ -3,7 +3,7 @@ const dbBoutique = require('../config/boutiqueConnection');
 
 function listAllProducts() {
   const healthyPromise = dbBoutique.any
-  ('SELECT * FROM products');
+  ('SELECT product_name, description, price FROM products');
   return healthyPromise;
 }
 
@@ -13,7 +13,7 @@ function listOneProduct(id) {
     WHERE id = $1
     `, id
   );
-  return heatlhyPromise;
+  return healthyPromise;
 }
 
 function addProduct(product) {
@@ -39,7 +39,7 @@ function updateProduct(product) {
 
 function destroyProduct(id) {
   const healthyPromise = dbBoutique.none(`
-    DELETE FROM product WHERE id = $1
+    DELETE FROM products WHERE id = $1
     `, id
   );
   return healthyPromise
