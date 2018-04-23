@@ -17,11 +17,12 @@ boutiqueRouter.route('/')
 .post(boutiqueController.createProduct, boutiqueViewController.addOneProduct);
 
 boutiqueRouter.get('/new', boutiqueViewController.addOneProduct);
+  // redirect model to be fixed -  boutiqueViewController.viewAddedProduct
 
 
 boutiqueRouter.route('/:id')
 .get(boutiqueController.getOneProduct, boutiqueViewController.listOneProduct)
-.put(boutiqueController.updateProduct)
+.put(boutiqueController.updateProduct, boutiqueViewController.editOneProduct)
 .delete(boutiqueController.destroyProduct);
 
 

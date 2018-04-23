@@ -3090,4 +3090,659 @@ anonymous {
   price: 7,
   category_id: 3 }
 POST / 200 42.922 ms - 168
---
+--Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:170:12)
+    at done (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1004:10)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:257:5)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+TypeError: Cannot read property 'redirect' of undefined
+    at addOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:17:3)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/route.js:137:13)
+    at boutiqueModels.addProduct.then.data (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/boutiqueController.js:47:5)
+    at process._tickCallback (internal/process/next_tick.js:109:7)
+
+
+
+^C✔ ~/wdi/unit02/projects/ladyd_boutique [master ↑·1|●9✚ 2] 
+03:05 $ npm run dev
+
+> ladyd_boutique@1.0.0 dev /Users/student_23/wdi/unit02/projects/ladyd_boutique
+> nodemon server.js
+
+[nodemon] 1.17.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening on port 3000
+Listing all items in Product Table
+There are  13 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Olive Oil',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 } ]
+GET / 304 53.300 ms - -
+GET /new 200 2.823 ms - 1736
+{ product_name: 'Black Walnut Oil',
+  description: 'antiseptic ',
+  price: '15.00',
+  category_id: '2' }
+POST / 500 97.984 ms - 74
+error: invalid input syntax for integer: "15.00"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+GET /new 200 1.195 ms - 1742
+{ product_name: 'Black Walnut Oil',
+  description: 'antiseptic ',
+  price: '15',
+  category_id: '2' }
+anonymous {
+  id: 16,
+  product_name: 'Black Walnut Oil',
+  description: 'antiseptic ',
+  price: 15,
+  category_id: 2 }
+POST / 200 37.995 ms - 124
+Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:170:12)
+    at done (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1004:10)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:257:5)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+Listing all items in Product Table
+There are  14 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Olive Oil',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Black Walnut Oil',
+    description: 'antiseptic ',
+    price: 15 } ]
+GET / 200 11.077 ms - 2631
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+Listing all items in Product Table
+There are  14 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Olive Oil',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Black Walnut Oil',
+    description: 'antiseptic ',
+    price: 15 } ]
+GET / 304 55.846 ms - -
+GET /new 304 3.342 ms - -
+TypeError: Cannot read property 'redirect' of undefined
+    at addOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:17:3)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:47:12)
+{ product_name: 'Organic Pomegranate Juice',
+  description: 'improves circulation and clears veins, arteries',
+  price: '7',
+  category_id: '3' }
+anonymous {
+  id: 17,
+  product_name: 'Organic Pomegranate Juice',
+  description: 'improves circulation and clears veins, arteries',
+  price: 7,
+  category_id: 3 }
+POST / 200 42.922 ms - 168
+Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:170:12)
+    at done (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1004:10)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:257:5)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+TypeError: Cannot read property 'redirect' of undefined
+    at addOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:17:3)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/route.js:137:13)
+    at boutiqueModels.addProduct.then.data (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/boutiqueController.js:47:5)
+    at process._tickCallback (internal/process/next_tick.js:109:7)
+^C✔ ~/wdi/unit02/projects/ladyd_boutique [master ↑·1|●9✚ 1] 
+03:15 $ git add -A
+✔ ~/wdi/unit02/projects/ladyd_boutique [master ↑·1|●9] 
+03:15 $ git commit -m "fixed error - able to use form to create a new product entry"
+[master 602fc9f] fixed error - able to use form to create a new product entry
+ Committer: student_23 <student_23@robsanchez.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 9 files changed, 2845 insertions(+), 122 deletions(-)
+ rewrite ladyd_boutique/controllers/boutiqueController.js (78%)
+ create mode 100644 ladyd_boutique/testForm.html
+ create mode 100644 ladyd_boutique/views/add.ejs
+✔ ~/wdi/unit02/projects/ladyd_boutique [master ↑·2|✔] 
+03:16 $ npm run dev
+
+> ladyd_boutique@1.0.0 dev /Users/student_23/wdi/unit02/projects/ladyd_boutique
+> nodemon server.js
+
+[nodemon] 1.17.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /new 304 18.196 ms - -
+TypeError: Cannot read property 'redirect' of undefined
+    at addOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:17:3)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:47:12)
+{ product_name: 'Spikenard Oil',
+  description: 'Aromatherapy',
+  price: '15',
+  category_id: '2' }
+anonymous {
+  id: 18,
+  product_name: 'Spikenard Oil',
+  description: 'Aromatherapy',
+  price: 15,
+  category_id: 2 }
+POST / 200 60.877 ms - 122
+Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:170:12)
+    at done (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1004:10)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:257:5)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+TypeError: Cannot read property 'redirect' of undefined
+    at addOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:17:3)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/route.js:137:13)
+    at boutiqueModels.addProduct.then.data (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/boutiqueController.js:47:5)
+    at process._tickCallback (internal/process/next_tick.js:109:7)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/route.js:202
+        throw new Error(msg);
+        ^
+
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.(anonymous function) [as get] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.(anonymous function) [as get] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:510:19)
+    at Object.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/router/boutiqueRouter.js:19:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/route.js:202
+        throw new Error(msg);
+        ^
+
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.(anonymous function) [as get] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.(anonymous function) [as get] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:510:19)
+    at Object.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/router/boutiqueRouter.js:19:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /new 500 23.516 ms - -
+Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.json (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:264:10)
+    at showError (/Users/student_23/wdi/unit02/projects/ladyd_boutique/router/boutiqueRouter.js:7:19)
+    at Layer.handle_error (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:71:5)
+    at next (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/route.js:135:13)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:97:5)
+    at next (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/route.js:137:13)
+    at addOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:17:3)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+{ product_name: 'Olive Leaf Extract',
+  description: 'Supports immune system',
+  price: '12',
+  category_id: '4' }
+anonymous {
+  id: 19,
+  product_name: 'Olive Leaf Extract',
+  description: 'Supports immune system',
+  price: 12,
+  category_id: 4 }
+POST / 200 60.906 ms - 137
+Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:170:12)
+    at done (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1004:10)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:257:5)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '1' }
+anonymous {
+  id: 1,
+  product_name: 'Pine-Tar bar',
+  description: 'antseptic cleanser',
+  price: 5,
+  category_id: 1 }
+GET /1 304 53.596 ms - -
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/show.ejs:5
+    3| 
+    4| 
+ >> 5| <%products.forEach((product) => { %>
+    6|   <div class="product">
+    7|    <h5>
+    8|    <%=JSON.stringify(product)%>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at listOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:8:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+{ id: '12' }
+anonymous {
+  id: 12,
+  product_name: 'Maca Powder',
+  description: 'Balances hormones',
+  price: 13,
+  category_id: 3 }
+GET /12 200 4.768 ms - 125
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/show.ejs:5
+    3| 
+    4| 
+ >> 5| <%products.forEach((product) => { %>
+    6|   <div class="product">
+    7|    <h5>
+    8|    <%=JSON.stringify(product)%>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at listOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:8:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+{ id: '12' }
+PUT /12 500 12.376 ms - 69
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '12' }
+PUT /12 500 31.136 ms - 69
+
+^C
+
+
+   ╭─────────────────────────────────────╮
+   │                                     │
+   │   Update available 5.6.0 → 5.8.0    │
+   │     Run npm i -g npm to update      │
+   │                                     │
+   ╰─────────────────────────────────────╯
+
+
+
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master ↑·2|✚ 3…1] 
+15:48 $ npm run dev
+
+> ladyd_boutique@1.0.0 dev /Users/student_23/wdi/unit02/projects/ladyd_boutique
+> nodemon server.js
+
+[nodemon] 1.17.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening on port 3000
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master ↑·2|✚ 3…1] 
+15:48 $ npm run dev
+
+> ladyd_boutique@1.0.0 dev /Users/student_23/wdi/unit02/projects/ladyd_boutique
+> nodemon server.js
+
+[nodemon] 1.17.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '15' }
+GET /15 500 45.965 ms - 63
+QueryResultError: 0
+    at QueryResultError.Error (native)
+    at new QueryResultError (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg-promise/lib/errors/queryResult.js:131:24)
+    at Query.ctx.db.client.query (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg-promise/lib/query.js:209:41)
+    at Query.handleReadyForQuery (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/query.js:126:10)
+    at Connection.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/client.js:163:19)
+    at emitOne (events.js:96:13)
+    at Connection.emit (events.js:188:7)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:117:12)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+Listing all items in Product Table
+There are  17 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Olive Oil',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Black Walnut Oil',
+    description: 'antiseptic ',
+    price: 15 },
+  anonymous {
+    product_name: 'Organic Pomegranate Juice',
+    description: 'improves circulation and clears veins, arteries',
+    price: 7 },
+  anonymous {
+    product_name: 'Spikenard Oil',
+    description: 'Aromatherapy',
+    price: 15 },
+  anonymous {
+    product_name: 'Olive Leaf Extract',
+    description: 'Supports immune system',
+    price: 12 } ]
+GET / 200 29.171 ms - 3199
+{ id: '12' }
+anonymous {
+  id: 12,
+  product_name: 'Maca Powder',
+  description: 'Balances hormones',
+  price: 13,
+  category_id: 3 }
+GET /12 200 9.444 ms - 125
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/show.ejs:5
+    3| 
+    4| 
+ >> 5| <%products.forEach((product) => { %>
+    6|   <div class="product">
+    7|    <h5>
+    8|    <%=JSON.stringify(product)%>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at listOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:8:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+{ id: '12' }
+PUT /12 500 11.045 ms - 69
+

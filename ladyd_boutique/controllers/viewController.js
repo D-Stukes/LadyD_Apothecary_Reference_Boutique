@@ -14,17 +14,26 @@ function addOneProduct(req, res) {
   res.render('add', {
   product: res.locals.product
  })
-  .redirect('/index');
+  // .redirect('index');
 }
 
 // function viewAddedProduct(req, res) {
-//   res.redirect('/index');
+//   res.redirect('index');
 // }
+
+
+function editOneProduct(req, res) {
+  res.render('edit', {
+  product: res.locals.product
+ })
+}
+
 
 module.exports = {
   listAllProducts,
   listOneProduct,
-  addOneProduct
+  addOneProduct,
+  editOneProduct
   // viewAddedProduct
 }
 
