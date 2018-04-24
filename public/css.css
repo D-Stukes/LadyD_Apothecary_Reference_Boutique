@@ -96,6 +96,10 @@
   font-size: 20px;
 }*/
 
+.list-image{
+  max-height: 50px;
+}
+
 .show-product{
   background-image: url('/images/pink-tulips.jpg');
   background-size: cover;
