@@ -6,25 +6,25 @@
     <title>Lady D's Apothecary Reference Boutique</title>
 </head>
 <body class="product-list">
-
-
-<h1 class="list-hdg"> Apothecary Reference Boutique Product List</h1>
-
-<!-- created for a parallex affect -->
-<div class="list-back">
-  <div class="product-listbox">
-  <%products.forEach((product) => { %>
-    <div class="product-list-item">
-     <h4>
-      <%=product.product_name%>
-      <a href="/products/<%=product.id%>"><%=product.product_name%></a>
-     <img src="<%=product.image_url%>" />
-     </h4>
+<div class="plist-container">
+    <div class="plist-hdg">
+    <h1 > Apothecary Reference Boutique Product List</h1>
     </div>
-   <% })%>
-  </div>
+    <!-- created for a parallex affect -->
+    <div class="list-back">
+      <div class="product-listbox">
+      <%products.forEach((product) => { %>
+        <div class="product-list-item">
+         <h4>
+          <%=product.product_name%>
+          <a href="/products/<%=product.id%>"><%=product.product_name%></a>
+         <img src="<%=product.image_url%>" />
+         </h4>
+        </div>
+       <% })%>
+      </div>
+    </div>
 </div>
-
 </body>
 
 </html>

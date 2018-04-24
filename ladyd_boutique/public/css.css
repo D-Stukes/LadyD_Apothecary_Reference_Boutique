@@ -3,6 +3,15 @@
   background-size: cover;
 }
 
+.product-linkbox{
+  margin-left:400px;
+  margin-top: 100px;
+  width: 415px;
+  font-size: 40px;
+  background-color: rgb(230, 255, 230,.8);
+}
+
+
 .product-links{
   font-size: 30px;
   text-align: center;
@@ -12,10 +21,52 @@
   top: 500px;
 }
 
+.mainpic1{
+  top:425px;
+  left:0;
+  width: 75px;
+  height: 75px;
+  position: relative;
+  animation: slideleft 10s infinite;
+  opacity: .8;
+}
+.mainpic2{
+  top:350px;
+  left:500px;
+  width: 75px;
+  height: 75px;
+  position: relative;
+  animation: slideright 10s infinite;
+  opacity: .8;
+}
+
+@keyframes slideleft
+{
+  from {left:0px;}
+  to {left:900px;}
+}
+
+@keyframes slideright
+{
+  from {left:900px;}
+  to {left:-100px;}
+}
+
 .list-hdg{
   /* position: fixed;*/
   text-align: center;
 }
+
+.plist-hdg{
+  /* position: fixed;*/
+  text-align: center;
+  flex: 1;
+}
+
+.plist-container{
+  display:flex;
+}
+
 
 .product-list{
   top: 100px;
@@ -23,6 +74,7 @@
   background-repeat: no-repeat;
   background-image: url('/images/bkgrd-peppermint-leaves.jpg');
   background-attachment: fixed;
+  flex:3;
 }
 
 .list-back{
