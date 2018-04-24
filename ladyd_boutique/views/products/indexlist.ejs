@@ -5,30 +5,27 @@
     <link rel="stylesheet" text="text/css" href="/css.css">
     <title>Lady D's Apothecary Reference Boutique</title>
 </head>
-<body>
+<body class="product-list">
 
 
+<h1 class="list-hdg"> Apothecary Reference Boutique Product List</h1>
 
-<h2> List of Apothecary <h2>
-
-
-
-<h1>Welcome to Lady D's Apothecary Reference Boutique</h1>
-
-
-<%products.forEach((product) => { %>
-  <div class="products">
-   <h4>
-    <%=product.product_name%>
-    <a href="/products/<%=product.id%>"><%=product.product_name%> </a>
-   <!-- <%=JSON.stringify(product)%> -->
-   <img src="<%=product.img_url%>" />
-   </h4>
+<!-- created for a parallex affect -->
+<div class="list-back">
+  <div class="product-listbox">
+  <%products.forEach((product) => { %>
+    <div class="product-list-item">
+     <h4>
+      <%=product.product_name%>
+      <a href="/products/<%=product.id%>"><%=product.product_name%></a>
+     <img src="<%=product.image_url%>" />
+     </h4>
+    </div>
+   <% })%>
   </div>
- <% })%>
-
-
+</div>
 
 </body>
 
 </html>
+

@@ -1,4 +1,51 @@
-.main {
-/*  background-color: pink;*/
+.main{
   background-image: url('/images/flowers-herbs.jpg');
+  background-size: cover;
 }
+
+.product-links{
+  font-size: 30px;
+  text-align: center;
+  font-color: green;
+  font-weight: bold;
+  margin-left: 20px;
+  top: 500px;
+}
+
+.list-hdg{
+  /* position: fixed;*/
+  text-align: center;
+}
+
+.product-list{
+  top: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('/images/bkgrd-peppermint-leaves.jpg');
+  background-attachment: fixed;
+}
+
+.list-back{
+  top: 100px;
+  height: 900px;
+  width: 650px;
+  background-color: rgb(180, 228, 212,.4);
+}
+
+.product-listbox{
+  width: 500px;
+}
+
+/*.product-list-item{
+  /background-color: white;
+  width: 50px
+  height: 20px;
+  opacity: .5;
+  font-size: 20px;
+}*/
+
+.show-product{
+  background-image: url('/images/bkgd1-HerbBasket.jpeg');
+  background-size: cover;
+}
+
