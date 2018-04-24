@@ -1,4 +1,4 @@
-\c ladyd_apothecary_reference_boutique
+-- \c ladyd_apothecary_reference_boutique
 
 -- removing any previous records and start the id sequence back to 1
 DROP TABLE IF EXISTS categories CASCADE;
