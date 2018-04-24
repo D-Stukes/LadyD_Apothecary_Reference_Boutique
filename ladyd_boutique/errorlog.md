@@ -3745,4 +3745,5924 @@ products is not defined
     at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
 { id: '12' }
 PUT /12 500 11.045 ms - 69
+Last login: Mon Apr 23 16:51:26 on ttys005
+ GA General Assembly  Web Development Immersive 
+------------------------------------------
+git version 2.16.2
+Homebrew 1.5.14 Homebrew/homebrew-core (git revision 4e691; last commit 2018-04-05)
+ruby 2.5.0p0 (2017-12-25 revision 61468) [x86_64-darwin15]
+node v6.11.3
+psql (PostgreSQL) 10.3
+------------------------------------------
+type unwelcome to remove this message
+✔ ~ 
+18:34 $ cd wdi
+✔ ~/wdi 
+18:34 $ cd unit02
+✔ ~/wdi/unit02 
+18:35 $ ls
+hw                           lessons
+internet-fundamentals-lesson projects
+labs
+✔ ~/wdi/unit02 
+18:36 $ cd projects
+✔ ~/wdi/unit02/projects [master|✚ 20…39] 
+18:37 $ ls
+UPDATEDv2 User Story Board_MVP_and_Relational_Database_Map.2.pdf
+ladyd_boutique
+✔ ~/wdi/unit02/projects [master|✚ 20…39] 
+18:38 $ npm run dev
+npm ERR! path /Users/student_23/wdi/unit02/projects/package.json
+npm ERR! code ENOENT
+npm ERR! errno -2
+npm ERR! syscall open
+npm ERR! enoent ENOENT: no such file or directory, open '/Users/student_23/wdi/unit02/projects/package.json'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent 
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/student_23/.npm/_logs/2018-04-23T22_39_11_878Z-debug.log
+✘-254 ~/wdi/unit02/projects [master|✚ 20…39] 
+18:39 $ ls
+UPDATEDv2 User Story Board_MVP_and_Relational_Database_Map.2.pdf
+ladyd_boutique
+✔ ~/wdi/unit02/projects [master|✚ 20…39] 
+18:39 $ ls
+UPDATEDv2 User Story Board_MVP_and_Relational_Database_Map.2.pdf
+ladyd_boutique
+✔ ~/wdi/unit02/projects [master|✚ 20…39] 
+18:39 $ cd ladyd_boutique/
+✔ ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+18:39 $ npm run dev
+
+> ladyd_boutique@1.0.0 dev /Users/student_23/wdi/unit02/projects/ladyd_boutique
+> nodemon server.js
+
+[nodemon] 1.17.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET / 500 24.522 ms - 1642
+SyntaxError: Unexpected token ) in /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/index.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+    at Object.compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12)
+    at Object.compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:388:16)
+    at handleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:212:18)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:16)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at app.get (/Users/student_23/wdi/unit02/projects/ladyd_boutique/server.js:28:7)
+psql -f seeds.sql -d postgres
+
+^C^C
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+18:46 $ psql -f seeds.sql-d
+seeds.sql-d: No such file or directory
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+18:46 $ psql -f db/seeds.sql-d
+db/seeds.sql-d: No such file or directory
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+18:47 $ psql -f /db/seeds.sql-d
+/db/seeds.sql-d: No such file or directory
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+18:47 $ psql -f db/seeds.sql-d
+db/seeds.sql-d: No such file or directory
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+18:53 $ psql -f db/seeds.sql -d
+psql: option requires an argument -- d
+Try "psql --help" for more information.
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+18:57 $ psql -f db/seeds.sql --d
+psql: option `--d' requires an argument
+Try "psql --help" for more information.
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+18:58 $ psql -f db/seeds.sql
+You are now connected to database "ladyd_apothecary_reference_boutique" as user "student_23".
+psql:db/seeds.sql:4: NOTICE:  drop cascades to constraint products_category_id_fkey on table products
+DROP TABLE
+DROP TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 4
+INSERT 0 15
+✔ ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+19:02 $ \l
+-bash: l: command not found
+✘-127 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+19:03 $ psql postgres -d
+psql: option requires an argument -- d
+Try "psql --help" for more information.
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+19:03 $ psql -d postgres
+psql (10.3)
+Type "help" for help.
+
+postgres=# \l
+                                                  List of databases
+                Name                 |   Owner    | Encoding |   Collate   |    Ctype    |     Access privileges     
+-------------------------------------+------------+----------+-------------+-------------+---------------------------
+ carmen                              | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ cheese_db                           | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ flashcards_dev                      | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ hogwarts_crud                       | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ hogwarts_crud_test                  | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ ladyd_apothecary_reference_boutique | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ movies_lab_db                       | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ musicdb                             | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ n64                                 | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ pizza_dev                           | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ postgres                            | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ quotes_db                           | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ student_23                          | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ template0                           | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/student_23            +
+                                     |            |          |             |             | student_23=CTc/student_23
+ template1                           | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/student_23            +
+                                     |            |          |             |             | student_23=CTc/student_23
+ todo_db                             | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ wdi                                 | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+(17 rows)
+
+postgres=# \d
+                   List of relations
+ Schema |         Name          |   Type   |   Owner    
+--------+-----------------------+----------+------------
+ public | cheeses               | table    | student_23
+ public | cheeses_cheese_id_seq | sequence | student_23
+ public | houses                | table    | student_23
+ public | houses_id_seq         | sequence | student_23
+ public | students              | table    | student_23
+ public | students_id_seq       | sequence | student_23
+(6 rows)
+
+postgres=# SELECT * FROM ladyd_apothecary_reference_boutique
+postgres-# 
+postgres-# ;
+ERROR:  relation "ladyd_apothecary_reference_boutique" does not exist
+LINE 1: SELECT * FROM ladyd_apothecary_reference_boutique
+                      ^
+postgres=# \q
+✔ ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+19:05 $ \c ladyd_apothecary_reference_boutique
+-bash: c: command not found
+✘-127 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+19:06 $ psql -d postgres
+psql (10.3)
+Type "help" for help.
+
+postgres=# \c ladyd_apothecary_reference_boutique
+You are now connected to database "ladyd_apothecary_reference_boutique" as user "student_23".
+ladyd_apothecary_reference_boutique=# SELECT * FROM ladyd_apothecary_reference_boutique
+;
+ERROR:  relation "ladyd_apothecary_reference_boutique" does not exist
+LINE 1: SELECT * FROM ladyd_apothecary_reference_boutique
+                      ^
+ladyd_apothecary_reference_boutique=# SELECT * FROM products;
+ id |   product_name   |                           description                           | price | category_id |             image_url              
+----+------------------+-----------------------------------------------------------------+-------+-------------+------------------------------------
+  1 | Pine-Tar bar     | antseptic cleanser                                              |     5 |           1 | ./public/images/herbal-bouquet.jpg
+  2 | Lavender bar     | fragrant bar                                                    |     7 |           1 | ./public/images/herbal-bouquet.jpg
+  3 | Olive Oil        | Cardiovascular support                                          |    15 |           2 | ./public/images/herbal-bouquet.jpg
+  4 | Broccoli Rabe    | Eliminates nausea                                               |     4 |           3 | ./public/images/herbal-bouquet.jpg
+  5 | Tea Tree Oil     | Posesses antifungul and antiseptic properties                   |     9 |           2 | ./public/images/herbal-bouquet.jpg
+  6 | Ginger           | Increases circulation                                           |     7 |           3 | ./public/images/herbal-bouquet.jpg
+  7 | Chamomile bar    | Calming aromatherapy                                            |     5 |           1 | ./public/images/herbal-bouquet.jpg
+  8 | Shea Butter bar  | Moisturizes and conditions skin                                 |     3 |           1 | ./public/images/herbal-bouquet.jpg
+  9 | Cayenne Pepper   | Increases metabolism                                            |     2 |           3 | ./public/images/herbal-bouquet.jpg
+ 10 | Clove Oil        | Antiseptic and aromatic                                         |    12 |           2 | ./public/images/herbal-bouquet.jpg
+ 11 | Raw Cacao Powder | Provides excellent circulation support                          |    18 |           3 | ./public/images/herbal-bouquet.jpg
+ 12 | Maca Powder      | Balances hormones                                               |    13 |           3 | ./public/images/herbal-bouquet.jpg
+ 13 | Raw vitamin C    | Supplies the body with antioxidants and fights cellular rusting |    25 |           4 | ./public/images/herbal-bouquet.jpg
+ 14 | Probiotics       | Restores good bacteria in gut                                   |    30 |           4 | ./public/images/herbal-bouquet.jpg
+ 15 | Ubiquinol        | Supports a healthy heart                                        |    15 |           4 | ./public/images/herbal-bouquet.jpg
+(15 rows)
+
+ladyd_apothecary_reference_boutique=# ^C
+ladyd_apothecary_reference_boutique=# ^C
+ladyd_apothecary_reference_boutique=# \q
+✔ ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+19:08 $ npm run dev
+
+> ladyd_boutique@1.0.0 dev /Users/student_23/wdi/unit02/projects/ladyd_boutique
+> nodemon server.js
+
+[nodemon] 1.17.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET / 200 19.365 ms - 387
+GET /css.css 304 4.083 ms - -
+GET /images/flowers-herbs.jpg 304 1.325 ms - -
+Listing all items in Product Table
+There are  15 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Olive Oil',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 } ]
+GET /products 200 33.932 ms - 4066
+GET /css.css 304 0.363 ms - -
+GET / 304 0.879 ms - -
+GET /css.css 304 0.278 ms - -
+GET /images/flowers-herbs.jpg 304 0.664 ms - -
+Listing all items in Product Table
+There are  15 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Olive Oil',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 } ]
+GET /products 304 13.902 ms - -
+GET /css.css 304 0.322 ms - -
+{ id: '3' }
+anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3 200 5.772 ms - 176
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/show.ejs:14
+    12| 
+    13| 
+ >> 14| <%products.forEach((product) => { %>
+    15|   <div class="products">
+    16|    <h4>
+    17|     <%=product.product_name%>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at listOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:8:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+{ id: 'new' }
+GET /products/new 500 10.943 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+{ id: 'edit' }
+GET /products/edit 500 8.985 ms - 73
+error: invalid input syntax for integer: "edit"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+{ id: '1' }
+anonymous {
+  id: 1,
+  product_name: 'Pine-Tar bar',
+  description: 'antseptic cleanser',
+  price: 5,
+  category_id: 1,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/1/edit 200 4.584 ms - 174
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/edit.ejs:16
+    14| 
+    15|      <div id="updateProduct">
+ >> 16|         <form action="/products/<%=product.id%>?_method=PUT" method="POST">
+    17|             <h4>Enter the category id number of the product you would like to update: </h4>
+    18|             <br><br>
+    19|             <input name="product_name" type="text" value="<%=product.product_name%>" />
+
+Cannot read property 'id' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:32)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at editOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:34:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+{ id: 'new' }
+GET /products/new 500 12.604 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+{ id: 'delete' }
+GET /products/delete 500 9.890 ms - 75
+error: invalid input syntax for integer: "delete"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+GET /new 404 2.314 ms - 142
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /new 404 11.398 ms - 142
+{ id: 'new' }
+GET /products/new 500 31.636 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: 'new' }
+GET /products/new 500 32.969 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+^C✔ ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+19:57 $ npm run dev
+
+> ladyd_boutique@1.0.0 dev /Users/student_23/wdi/unit02/projects/ladyd_boutique
+> nodemon server.js
+
+[nodemon] 1.17.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: 'new' }
+GET /products/new 500 32.782 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: 'new' }
+GET /products/new 500 36.814 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+Listing all items in Product Table
+There are  15 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Olive Oil',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 } ]
+GET /products/ 200 44.085 ms - 4066
+GET /css.css 304 5.554 ms - -
+{ id: 'add' }
+GET /products/add 500 14.327 ms - 72
+error: invalid input syntax for integer: "add"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+GET /products/products/add 404 2.428 ms - 160
+{ id: 'products' }
+GET /products/products 500 8.295 ms - 77
+error: invalid input syntax for integer: "products"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+GET /products/products/new 404 0.992 ms - 160
+GET / 304 2.068 ms - -
+GET /css.css 304 0.446 ms - -
+GET /images/flowers-herbs.jpg 304 0.483 ms - -
+Listing all items in Product Table
+There are  15 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Olive Oil',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 } ]
+GET /products 304 10.569 ms - -
+GET /css.css 304 0.393 ms - -
+{ id: 'new' }
+GET /products/new 500 12.251 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: 'new' }
+GET /products/new 500 32.700 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+{ id: 'new' }
+GET /products/new 500 4.392 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/path-to-regexp/index.js:63
+  path = ('^' + path + (strict ? '' : path[path.length - 1] === '/' ? '?' : '/?'))
+                                               ^
+
+TypeError: Cannot read property 'length' of undefined
+    at pathtoRegexp (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/path-to-regexp/index.js:63:48)
+    at new Layer (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:45:17)
+    at Function.route (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:494:15)
+    at Function.proto.(anonymous function) [as get] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/router/boutiqueRouter.js:20:2)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: 'new' }
+GET /products/new 500 34.486 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+{ id: 'new' }
+GET /products/new 500 3.422 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: 'new' }
+GET /products/new 500 34.010 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: 'new' }
+GET /products/new 500 34.252 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+{ id: 'new' }
+GET /products/new 500 4.272 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+{ id: 'new' }
+GET /products/new 500 9.334 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+{ id: 'new' }
+GET /products/new 500 2.982 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: 'new' }
+GET /products/new 500 34.608 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+^C✔ ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+20:12 $ npm run dev
+
+> ladyd_boutique@1.0.0 dev /Users/student_23/wdi/unit02/projects/ladyd_boutique
+> nodemon server.js
+
+[nodemon] 1.17.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: 'new' }
+GET /products/new 500 35.664 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /products/new 404 9.614 ms - 151
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /products/new 500 14.667 ms - 1645
+Error: Failed to lookup view "product/add" in views directory "/Users/student_23/wdi/unit02/projects/ladyd_boutique/views"
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at renderAddForm (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:28:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:275:10)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /products/new 500 19.178 ms - 2324
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/add.ejs:42
+    40|             <!-- Creating product drop-down list-->
+    41|               <select name="product.id">
+ >> 42|                 <% products.forEach((product) => { %>
+    43|                   <option value="<%=product.id%>"><%=product.product_name%></option>
+    44|                 <% }) %>
+    45|               </select>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:8)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at renderAddForm (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:28:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /products/new 500 18.770 ms - 2324
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/add.ejs:42
+    40|             <!-- Creating product drop-down list-->
+    41|               <select name="product.id">
+ >> 42|                 <% products.forEach((product) => { %>
+    43|                   <option value="<%=product.id%>"><%=product.product_name%></option>
+    44|                 <% }) %>
+    45|               </select>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:8)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at addOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:21:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /products/new 500 19.827 ms - 2348
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/add.ejs:42
+    40|             <!-- Creating product drop-down list-->
+    41|               <select name="product.id">
+ >> 42|                 <% products.forEach((product) => { %>
+    43|                   <option value="<%=product.id%>"><%=product.product_name%></option>
+    44|                 <% }) %>
+    45|               </select>
+
+Cannot read property 'forEach' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:16)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at addOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:21:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+GET /products/new 500 3.977 ms - 2363
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/add.ejs:42
+    40|             <!-- Creating product drop-down list-->
+    41|             <!--   <select name="product.id">
+ >> 42|                 <% products.forEach((product) => { %>
+    43|                   <option value="<%=product.id%>"><%=product.product_name%></option>
+    44|                 <% }) %>
+    45|               </select> -->
+
+Cannot read property 'forEach' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:16)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at addOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:21:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+rs
+[nodemon] starting `node server.js`
+Listening on port 3000
+^C✔ ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+20:25 $ npm run dev
+
+> ladyd_boutique@1.0.0 dev /Users/student_23/wdi/unit02/projects/ladyd_boutique
+> nodemon server.js
+
+[nodemon] 1.17.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /products/new 500 20.621 ms - 2363
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/add.ejs:42
+    40|             <!-- Creating product drop-down list-->
+    41|             <!--   <select name="product.id">
+ >> 42|                 <% products.forEach((product) => { %>
+    43|                   <option value="<%=product.id%>"><%=product.product_name%></option>
+    44|                 <% }) %>
+    45|               </select> -->
+
+Cannot read property 'forEach' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:16)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at addOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:21:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+GET /products/new 200 6.768 ms - 2032
+GET /css/css.css 404 2.175 ms - 150
+{ product_name: 'Black Pepper',
+  description: 'Tasty and acts as an antioxidant',
+  price: '3',
+  category_id: '4',
+  image_url: 'testing' }
+anonymous {
+  id: 16,
+  product_name: 'Black Pepper',
+  description: 'Tasty and acts as an antioxidant',
+  price: 3,
+  category_id: 4,
+  image_url: null }
+POST /products 200 62.188 ms - 157
+Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:170:12)
+    at done (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1004:10)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:257:5)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+{ product_name: 'Black Pepper',
+  description: 'Tasty and acts as an antioxidant',
+  price: '3',
+  category_id: '4',
+  image_url: 'testing' }
+anonymous {
+  id: 17,
+  product_name: 'Black Pepper',
+  description: 'Tasty and acts as an antioxidant',
+  price: 3,
+  category_id: 4,
+  image_url: null }
+POST /products 200 14.621 ms - 157
+Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:170:12)
+    at done (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1004:10)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:257:5)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ product_name: 'Black Pepper',
+  description: 'Tasty and acts as an antioxidant',
+  price: '3',
+  category_id: '4',
+  image_url: 'testing' }
+anonymous {
+  id: 18,
+  product_name: 'Black Pepper',
+  description: 'Tasty and acts as an antioxidant',
+  price: 3,
+  category_id: 4,
+  image_url: null }
+POST /products 200 71.796 ms - 2032
+GET /css/css.css 404 7.772 ms - 150
+{ product_name: 'jhkfkseksfk',
+  description: 'dkfjlsd',
+  price: '3',
+  category_id: '4',
+  image_url: 'dkfjls' }
+anonymous {
+  id: 19,
+  product_name: 'jhkfkseksfk',
+  description: 'dkfjlsd',
+  price: 3,
+  category_id: 4,
+  image_url: null }
+POST /products 200 24.822 ms - 2032
+GET /css/css.css 404 2.922 ms - 150
+{ product_name: 'jhkfkseksfk',
+  description: 'dkfjlsd',
+  price: '3',
+  category_id: '4',
+  image_url: 'dkfjls' }
+anonymous {
+  id: 20,
+  product_name: 'jhkfkseksfk',
+  description: 'dkfjlsd',
+  price: 3,
+  category_id: 4,
+  image_url: null }
+POST /products 200 11.326 ms - 2032
+GET /css/css.css 404 0.586 ms - 150
+Listing all items in Product Table
+There are  20 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Olive Oil',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 } ]
+GET /products 200 12.590 ms - 5290
+GET /css.css 304 2.245 ms - -
+Listing all items in Product Table
+There are  20 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Olive Oil',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 } ]
+GET /products 304 11.745 ms - -
+GET /css.css 304 0.506 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /products/new 304 24.060 ms - -
+GET /css/css.css 404 3.293 ms - 150
+{ product_name: 'fkskfk',
+  description: 'kfjsldkj',
+  price: '4',
+  category_id: '4',
+  image_url: '' }
+anonymous {
+  id: 21,
+  product_name: 'fkskfk',
+  description: 'kfjsldkj',
+  price: 4,
+  category_id: 4,
+  image_url: null }
+POST /products 302 55.236 ms - 54
+GET /index 404 1.379 ms - 144
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /products/new 304 15.375 ms - -
+GET /css/css.css 404 6.601 ms - 150
+{ product_name: 'fskfh',
+  description: 'dfjsdj',
+  price: '4',
+  category_id: '4',
+  image_url: '' }
+anonymous {
+  id: 22,
+  product_name: 'fskfh',
+  description: 'dfjsdj',
+  price: 4,
+  category_id: 4,
+  image_url: null }
+POST /products 302 59.024 ms - 62
+Listing all items in Product Table
+There are  22 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Olive Oil',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'fkskfk', description: 'kfjsldkj', price: 4 },
+  anonymous { product_name: 'fskfh', description: 'dfjsdj', price: 4 } ]
+GET /products 200 11.912 ms - 5713
+GET /css.css 304 2.610 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /products/edit 500 24.611 ms - 2309
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/edit.ejs:16
+    14| 
+    15|      <div id="updateProduct">
+ >> 16|         <form action="/products/<%=product.id%>?_method=PUT" method="POST">
+    17|             <h4>Enter the category id number of the product you would like to update: </h4>
+    18|             <br><br>
+    19|             <input name="product_name" type="text" value="<%=product.product_name%>" />
+
+Cannot read property 'id' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:32)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at editOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:38:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 200 37.267 ms - 176
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/edit.ejs:16
+    14| 
+    15|      <div id="updateProduct">
+ >> 16|         <form action="/products/<%=product.id%>?_method=PUT" method="POST">
+    17|             <h4>Enter the category id number of the product you would like to update: </h4>
+    18|             <br><br>
+    19|             <input name="product_name" type="text" value="<%=product.product_name%>" />
+
+Cannot read property 'id' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:32)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at editOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:38:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 304 37.151 ms - -
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/edit.ejs:16
+    14| 
+    15|      <div id="updateProduct">
+ >> 16|         <form action="/products/<%=product.id%>?_method=PUT" method="POST">
+    17|             <h4>Enter the category id number of the product you would like to update: </h4>
+    18|             <br><br>
+    19|             <input name="product_name" type="text" value="<%=product.product_name%>" />
+
+Cannot read property 'id' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:32)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at editOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:38:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+^C✔ ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+20:48 $ npm run dev
+
+> ladyd_boutique@1.0.0 dev /Users/student_23/wdi/unit02/projects/ladyd_boutique
+> nodemon server.js
+
+[nodemon] 1.17.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 304 36.686 ms - -
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/edit.ejs:16
+    14| 
+    15|      <div id="updateProduct">
+ >> 16|         <form action="/products/<%=product.id%>?_method=PUT" method="POST">
+    17|             <h4>Enter the category id number of the product you would like to update: </h4>
+    18|             <br><br>
+    19|             <input name="product_name" type="text" value="<%=product.product_name%>" />
+
+Cannot read property 'id' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:32)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at editOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:38:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 500 50.098 ms - 2309
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/edit.ejs:16
+    14| 
+    15|      <div id="updateProduct">
+ >> 16|         <form action="/products/<%=product.id%>?_method=PUT" method="POST">
+    17|             <h4>Enter the category id number of the product you would like to update: </h4>
+    18|             <br><br>
+    19|             <input name="product_name" type="text" value="<%=product.product_name%>" />
+
+Cannot read property 'id' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:32)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at editOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:38:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 500 37.627 ms - 73
+TypeError: Cannot set property 'product' of undefined
+    at boutiqueModels.listOneProduct.then.data (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/boutiqueController.js:28:23)
+    at process._tickCallback (internal/process/next_tick.js:109:7)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 500 49.729 ms - 2309
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/edit.ejs:16
+    14| 
+    15|      <div id="updateProduct">
+ >> 16|         <form action="/products/<%=product.id%>?_method=PUT" method="POST">
+    17|             <h4>Enter the category id number of the product you would like to update: </h4>
+    18|             <br><br>
+    19|             <input name="product_name" type="text" value="<%=product.product_name%>" />
+
+Cannot read property 'id' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:32)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at editOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:38:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 500 48.640 ms - 2546
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/edit.ejs:20
+    18|             <br><br>
+    19|             <input name="product_name" type="text" value="<%=product.product_name%>" />
+ >> 20|             <input name="description" type="text" value="<%description%>" />
+    21|             <input name="price" type="number" value="<%price%>" />
+    22|             <input name="category_id" type="number" value="<%number%>" >
+    23|             <input name="image_url" type="text" value="<%image_url%>" >
+
+description is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:17:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at editOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:38:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 200 18.164 ms - 1615
+GET /css/css.css 404 2.264 ms - 150
+{ product_name: 'Extra Virgin Olive Oil',
+  description: 'Cardiovascular support',
+  price: '18',
+  category_id: '2',
+  image_url: './public/images/herbal-bouquet.jpg',
+  id: '3' }
+PUT /products/3?_method=PUT 500 30.790 ms - 83
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 304 45.340 ms - -
+GET /css/css.css 404 4.979 ms - 150
+{ product_name: 'extra virgin Olive Oil',
+  description: 'Cardiovascular support',
+  price: '15',
+  category_id: '2',
+  image_url: './public/images/herbal-bouquet.jpg',
+  id: '3' }
+PUT /products/3?_method=PUT 500 25.419 ms - 83
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 304 49.587 ms - -
+GET /css/css.css 404 4.902 ms - 150
+{ product_name: 'Olive Oil2',
+  description: 'Cardiovascular support',
+  price: '15',
+  category_id: '2',
+  image_url: './public/images/herbal-bouquet.jpg',
+  id: '3' }
+PUT /products/3?_method=PUT 500 26.626 ms - 83
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 304 44.448 ms - -
+GET /css/css.css 404 4.847 ms - 150
+this is req.body in update: { product_name: 'Olive Oil2',
+  description: 'Cardiovascular support',
+  price: '15',
+  category_id: '2',
+  image_url: './public/images/herbal-bouquet.jpg',
+  id: '3' }
+PUT /products/3?_method=PUT 500 27.350 ms - 83
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 304 45.873 ms - -
+GET /css/css.css 404 3.828 ms - 150
+this is req.body in update: { product_name: 'Olive Oil',
+  description: 'Cardiovascular ',
+  price: '15',
+  category_id: '2',
+  image_url: './public/images/herbal-bouquet.jpg',
+  id: '3' }
+PUT /products/3?_method=PUT 500 32.599 ms - 76
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 304 49.454 ms - -
+GET /css/css.css 404 4.514 ms - 150
+this is req.body in update: { product_name: 'Olive Oil2',
+  description: 'Cardiovascular support',
+  price: '15',
+  category_id: '2',
+  image_url: './public/images/herbal-bouquet.jpg',
+  id: '3' }
+this is data in update: anonymous {
+  id: 3,
+  product_name: 'Olive Oil2',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+PUT /products/3?_method=PUT 302 31.848 ms - 66
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil2',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3 500 7.206 ms - 1906
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/show.ejs:14
+    12| 
+    13| 
+ >> 14| <%products.forEach((product) => { %>
+    15|   <div class="products">
+    16|    <h4>
+    17|     <%=product.product_name%>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at listOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:8:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil2',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3 500 14.258 ms - 1906
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/show.ejs:14
+    12| 
+    13| 
+ >> 14| <%products.forEach((product) => { %>
+    15|   <div class="products">
+    16|    <h4>
+    17|     <%=product.product_name%>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at listOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:8:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+Listing all items in Product Table
+There are  22 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'fkskfk', description: 'kfjsldkj', price: 4 },
+  anonymous { product_name: 'fskfh', description: 'dfjsdj', price: 4 },
+  anonymous {
+    product_name: 'Olive Oil2',
+    description: 'Cardiovascular support',
+    price: 15 } ]
+GET /products/ 200 12.417 ms - 5716
+GET /css.css 304 3.530 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+Listing all items in Product Table
+There are  22 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'fkskfk', description: 'kfjsldkj', price: 4 },
+  anonymous { product_name: 'fskfh', description: 'dfjsdj', price: 4 },
+  anonymous {
+    product_name: 'Olive Oil2',
+    description: 'Cardiovascular support',
+    price: 15 } ]
+GET /products/ 304 45.775 ms - -
+GET /css.css 304 3.721 ms - -
+Listing all items in Product Table
+There are  22 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'fkskfk', description: 'kfjsldkj', price: 4 },
+  anonymous { product_name: 'fskfh', description: 'dfjsdj', price: 4 },
+  anonymous {
+    product_name: 'Olive Oil2',
+    description: 'Cardiovascular support',
+    price: 15 } ]
+GET /products/ 304 13.940 ms - -
+GET /css.css 304 0.470 ms - -
+{ id: '12' }
+this is data: anonymous {
+  id: 12,
+  product_name: 'Maca Powder',
+  description: 'Balances hormones',
+  price: 13,
+  category_id: 3,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/12/edit 200 12.134 ms - 1613
+GET /css/css.css 404 3.327 ms - 150
+{ id: '18' }
+this is data: anonymous {
+  id: 18,
+  product_name: 'Black Pepper',
+  description: 'Tasty and acts as an antioxidant',
+  price: 3,
+  category_id: 4,
+  image_url: null }
+GET /products/18/edit 200 3.251 ms - 1594
+GET /css/css.css 404 0.812 ms - 150
+{ id: '20' }
+this is data: anonymous {
+  id: 20,
+  product_name: 'jhkfkseksfk',
+  description: 'dkfjlsd',
+  price: 3,
+  category_id: 4,
+  image_url: null }
+GET /products/20/edit 200 9.384 ms - 1568
+GET /css/css.css 404 0.529 ms - 150
+this is req.body in update: { product_name: 'jhkfkseksfkhelllo',
+  description: 'dkfjlsd',
+  price: '3',
+  category_id: '4',
+  image_url: '',
+  id: '20' }
+this is data in update: anonymous {
+  id: 20,
+  product_name: 'jhkfkseksfkhelllo',
+  description: 'dkfjlsd',
+  price: 3,
+  category_id: 4,
+  image_url: '' }
+PUT /products/20?_method=PUT 302 34.443 ms - 62
+Listing all items in Product Table
+There are  22 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'fkskfk', description: 'kfjsldkj', price: 4 },
+  anonymous { product_name: 'fskfh', description: 'dfjsdj', price: 4 },
+  anonymous {
+    product_name: 'Olive Oil2',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'jhkfkseksfkhelllo',
+    description: 'dkfjlsd',
+    price: 3 } ]
+GET /products 200 5.307 ms - 5734
+GET /css.css 304 0.263 ms - -
+{ id: '21' }
+this is data: anonymous {
+  id: 21,
+  product_name: 'fkskfk',
+  description: 'kfjsldkj',
+  price: 4,
+  category_id: 4,
+  image_url: null }
+GET /products/21 500 16.562 ms - 1906
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/show.ejs:14
+    12| 
+    13| 
+ >> 14| <%products.forEach((product) => { %>
+    15|   <div class="products">
+    16|    <h4>
+    17|     <%=product.product_name%>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at listOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:8:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+{ id: '20' }
+this is data: anonymous {
+  id: 20,
+  product_name: 'jhkfkseksfkhelllo',
+  description: 'dkfjlsd',
+  price: 3,
+  category_id: 4,
+  image_url: '' }
+GET /products/20 500 11.245 ms - 1906
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/show.ejs:14
+    12| 
+    13| 
+ >> 14| <%products.forEach((product) => { %>
+    15|   <div class="products">
+    16|    <h4>
+    17|     <%=product.product_name%>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at listOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:8:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+{ id: '19' }
+this is data: anonymous {
+  id: 19,
+  product_name: 'jhkfkseksfk',
+  description: 'dkfjlsd',
+  price: 3,
+  category_id: 4,
+  image_url: null }
+GET /products/19 500 19.335 ms - 1906
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/show.ejs:14
+    12| 
+    13| 
+ >> 14| <%products.forEach((product) => { %>
+    15|   <div class="products">
+    16|    <h4>
+    17|     <%=product.product_name%>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at listOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:8:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+Listing all items in Product Table
+There are  22 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'fkskfk', description: 'kfjsldkj', price: 4 },
+  anonymous { product_name: 'fskfh', description: 'dfjsdj', price: 4 },
+  anonymous {
+    product_name: 'Olive Oil2',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'jhkfkseksfkhelllo',
+    description: 'dkfjlsd',
+    price: 3 } ]
+GET /products/ 200 17.744 ms - 5734
+GET /css.css 304 5.395 ms - -
+{ id: '15' }
+this is data: anonymous {
+  id: 15,
+  product_name: 'Ubiquinol',
+  description: 'Supports a healthy heart',
+  price: 15,
+  category_id: 4,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/15 500 6.387 ms - 1906
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/show.ejs:14
+    12| 
+    13| 
+ >> 14| <%products.forEach((product) => { %>
+    15|   <div class="products">
+    16|    <h4>
+    17|     <%=product.product_name%>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at listOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:8:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+GET /product/15 404 0.949 ms - 149
+GET /products15 404 0.709 ms - 149
+
+^C^C
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+21:14 $ npm run dev
+
+> ladyd_boutique@1.0.0 dev /Users/student_23/wdi/unit02/projects/ladyd_boutique
+> nodemon server.js
+
+[nodemon] 1.17.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening on port 3000
+Last login: Mon Apr 23 16:51:26 on ttys005
+ GA General Assembly  Web Development Immersive 
+------------------------------------------
+git version 2.16.2
+Homebrew 1.5.14 Homebrew/homebrew-core (git revision 4e691; last commit 2018-04-05)
+ruby 2.5.0p0 (2017-12-25 revision 61468) [x86_64-darwin15]
+node v6.11.3
+psql (PostgreSQL) 10.3
+------------------------------------------
+type unwelcome to remove this message
+✔ ~ 
+18:34 $ cd wdi
+✔ ~/wdi 
+18:34 $ cd unit02
+✔ ~/wdi/unit02 
+18:35 $ ls
+hw                           lessons
+internet-fundamentals-lesson projects
+labs
+✔ ~/wdi/unit02 
+18:36 $ cd projects
+✔ ~/wdi/unit02/projects [master|✚ 20…39] 
+18:37 $ ls
+UPDATEDv2 User Story Board_MVP_and_Relational_Database_Map.2.pdf
+ladyd_boutique
+✔ ~/wdi/unit02/projects [master|✚ 20…39] 
+18:38 $ npm run dev
+npm ERR! path /Users/student_23/wdi/unit02/projects/package.json
+npm ERR! code ENOENT
+npm ERR! errno -2
+npm ERR! syscall open
+npm ERR! enoent ENOENT: no such file or directory, open '/Users/student_23/wdi/unit02/projects/package.json'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent 
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/student_23/.npm/_logs/2018-04-23T22_39_11_878Z-debug.log
+✘-254 ~/wdi/unit02/projects [master|✚ 20…39] 
+18:39 $ ls
+UPDATEDv2 User Story Board_MVP_and_Relational_Database_Map.2.pdf
+ladyd_boutique
+✔ ~/wdi/unit02/projects [master|✚ 20…39] 
+18:39 $ ls
+UPDATEDv2 User Story Board_MVP_and_Relational_Database_Map.2.pdf
+ladyd_boutique
+✔ ~/wdi/unit02/projects [master|✚ 20…39] 
+18:39 $ cd ladyd_boutique/
+✔ ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+18:39 $ npm run dev
+
+> ladyd_boutique@1.0.0 dev /Users/student_23/wdi/unit02/projects/ladyd_boutique
+> nodemon server.js
+
+[nodemon] 1.17.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET / 500 24.522 ms - 1642
+SyntaxError: Unexpected token ) in /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/index.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+    at Object.compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12)
+    at Object.compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:388:16)
+    at handleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:212:18)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:16)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at app.get (/Users/student_23/wdi/unit02/projects/ladyd_boutique/server.js:28:7)
+psql -f seeds.sql -d postgres
+
+^C^C
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+18:46 $ psql -f seeds.sql-d
+seeds.sql-d: No such file or directory
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+18:46 $ psql -f db/seeds.sql-d
+db/seeds.sql-d: No such file or directory
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+18:47 $ psql -f /db/seeds.sql-d
+/db/seeds.sql-d: No such file or directory
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+18:47 $ psql -f db/seeds.sql-d
+db/seeds.sql-d: No such file or directory
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+18:53 $ psql -f db/seeds.sql -d
+psql: option requires an argument -- d
+Try "psql --help" for more information.
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+18:57 $ psql -f db/seeds.sql --d
+psql: option `--d' requires an argument
+Try "psql --help" for more information.
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+18:58 $ psql -f db/seeds.sql
+You are now connected to database "ladyd_apothecary_reference_boutique" as user "student_23".
+psql:db/seeds.sql:4: NOTICE:  drop cascades to constraint products_category_id_fkey on table products
+DROP TABLE
+DROP TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 4
+INSERT 0 15
+✔ ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+19:02 $ \l
+-bash: l: command not found
+✘-127 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+19:03 $ psql postgres -d
+psql: option requires an argument -- d
+Try "psql --help" for more information.
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+19:03 $ psql -d postgres
+psql (10.3)
+Type "help" for help.
+
+postgres=# \l
+                                                  List of databases
+                Name                 |   Owner    | Encoding |   Collate   |    Ctype    |     Access privileges     
+-------------------------------------+------------+----------+-------------+-------------+---------------------------
+ carmen                              | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ cheese_db                           | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ flashcards_dev                      | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ hogwarts_crud                       | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ hogwarts_crud_test                  | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ ladyd_apothecary_reference_boutique | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ movies_lab_db                       | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ musicdb                             | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ n64                                 | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ pizza_dev                           | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ postgres                            | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ quotes_db                           | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ student_23                          | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ template0                           | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/student_23            +
+                                     |            |          |             |             | student_23=CTc/student_23
+ template1                           | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/student_23            +
+                                     |            |          |             |             | student_23=CTc/student_23
+ todo_db                             | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ wdi                                 | student_23 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+(17 rows)
+
+postgres=# \d
+                   List of relations
+ Schema |         Name          |   Type   |   Owner    
+--------+-----------------------+----------+------------
+ public | cheeses               | table    | student_23
+ public | cheeses_cheese_id_seq | sequence | student_23
+ public | houses                | table    | student_23
+ public | houses_id_seq         | sequence | student_23
+ public | students              | table    | student_23
+ public | students_id_seq       | sequence | student_23
+(6 rows)
+
+postgres=# SELECT * FROM ladyd_apothecary_reference_boutique
+postgres-# 
+postgres-# ;
+ERROR:  relation "ladyd_apothecary_reference_boutique" does not exist
+LINE 1: SELECT * FROM ladyd_apothecary_reference_boutique
+                      ^
+postgres=# \q
+✔ ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+19:05 $ \c ladyd_apothecary_reference_boutique
+-bash: c: command not found
+✘-127 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+19:06 $ psql -d postgres
+psql (10.3)
+Type "help" for help.
+
+postgres=# \c ladyd_apothecary_reference_boutique
+You are now connected to database "ladyd_apothecary_reference_boutique" as user "student_23".
+ladyd_apothecary_reference_boutique=# SELECT * FROM ladyd_apothecary_reference_boutique
+;
+ERROR:  relation "ladyd_apothecary_reference_boutique" does not exist
+LINE 1: SELECT * FROM ladyd_apothecary_reference_boutique
+                      ^
+ladyd_apothecary_reference_boutique=# SELECT * FROM products;
+ id |   product_name   |                           description                           | price | category_id |             image_url              
+----+------------------+-----------------------------------------------------------------+-------+-------------+------------------------------------
+  1 | Pine-Tar bar     | antseptic cleanser                                              |     5 |           1 | ./public/images/herbal-bouquet.jpg
+  2 | Lavender bar     | fragrant bar                                                    |     7 |           1 | ./public/images/herbal-bouquet.jpg
+  3 | Olive Oil        | Cardiovascular support                                          |    15 |           2 | ./public/images/herbal-bouquet.jpg
+  4 | Broccoli Rabe    | Eliminates nausea                                               |     4 |           3 | ./public/images/herbal-bouquet.jpg
+  5 | Tea Tree Oil     | Posesses antifungul and antiseptic properties                   |     9 |           2 | ./public/images/herbal-bouquet.jpg
+  6 | Ginger           | Increases circulation                                           |     7 |           3 | ./public/images/herbal-bouquet.jpg
+  7 | Chamomile bar    | Calming aromatherapy                                            |     5 |           1 | ./public/images/herbal-bouquet.jpg
+  8 | Shea Butter bar  | Moisturizes and conditions skin                                 |     3 |           1 | ./public/images/herbal-bouquet.jpg
+  9 | Cayenne Pepper   | Increases metabolism                                            |     2 |           3 | ./public/images/herbal-bouquet.jpg
+ 10 | Clove Oil        | Antiseptic and aromatic                                         |    12 |           2 | ./public/images/herbal-bouquet.jpg
+ 11 | Raw Cacao Powder | Provides excellent circulation support                          |    18 |           3 | ./public/images/herbal-bouquet.jpg
+ 12 | Maca Powder      | Balances hormones                                               |    13 |           3 | ./public/images/herbal-bouquet.jpg
+ 13 | Raw vitamin C    | Supplies the body with antioxidants and fights cellular rusting |    25 |           4 | ./public/images/herbal-bouquet.jpg
+ 14 | Probiotics       | Restores good bacteria in gut                                   |    30 |           4 | ./public/images/herbal-bouquet.jpg
+ 15 | Ubiquinol        | Supports a healthy heart                                        |    15 |           4 | ./public/images/herbal-bouquet.jpg
+(15 rows)
+
+ladyd_apothecary_reference_boutique=# ^C
+ladyd_apothecary_reference_boutique=# ^C
+ladyd_apothecary_reference_boutique=# \q
+✔ ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+19:08 $ npm run dev
+
+> ladyd_boutique@1.0.0 dev /Users/student_23/wdi/unit02/projects/ladyd_boutique
+> nodemon server.js
+
+[nodemon] 1.17.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET / 200 19.365 ms - 387
+GET /css.css 304 4.083 ms - -
+GET /images/flowers-herbs.jpg 304 1.325 ms - -
+Listing all items in Product Table
+There are  15 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Olive Oil',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 } ]
+GET /products 200 33.932 ms - 4066
+GET /css.css 304 0.363 ms - -
+GET / 304 0.879 ms - -
+GET /css.css 304 0.278 ms - -
+GET /images/flowers-herbs.jpg 304 0.664 ms - -
+Listing all items in Product Table
+There are  15 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Olive Oil',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 } ]
+GET /products 304 13.902 ms - -
+GET /css.css 304 0.322 ms - -
+{ id: '3' }
+anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3 200 5.772 ms - 176
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/show.ejs:14
+    12| 
+    13| 
+ >> 14| <%products.forEach((product) => { %>
+    15|   <div class="products">
+    16|    <h4>
+    17|     <%=product.product_name%>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at listOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:8:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+{ id: 'new' }
+GET /products/new 500 10.943 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+{ id: 'edit' }
+GET /products/edit 500 8.985 ms - 73
+error: invalid input syntax for integer: "edit"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+{ id: '1' }
+anonymous {
+  id: 1,
+  product_name: 'Pine-Tar bar',
+  description: 'antseptic cleanser',
+  price: 5,
+  category_id: 1,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/1/edit 200 4.584 ms - 174
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/edit.ejs:16
+    14| 
+    15|      <div id="updateProduct">
+ >> 16|         <form action="/products/<%=product.id%>?_method=PUT" method="POST">
+    17|             <h4>Enter the category id number of the product you would like to update: </h4>
+    18|             <br><br>
+    19|             <input name="product_name" type="text" value="<%=product.product_name%>" />
+
+Cannot read property 'id' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:32)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at editOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:34:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+{ id: 'new' }
+GET /products/new 500 12.604 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+{ id: 'delete' }
+GET /products/delete 500 9.890 ms - 75
+error: invalid input syntax for integer: "delete"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+GET /new 404 2.314 ms - 142
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /new 404 11.398 ms - 142
+{ id: 'new' }
+GET /products/new 500 31.636 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: 'new' }
+GET /products/new 500 32.969 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+^C✔ ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+19:57 $ npm run dev
+
+> ladyd_boutique@1.0.0 dev /Users/student_23/wdi/unit02/projects/ladyd_boutique
+> nodemon server.js
+
+[nodemon] 1.17.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: 'new' }
+GET /products/new 500 32.782 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: 'new' }
+GET /products/new 500 36.814 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+Listing all items in Product Table
+There are  15 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Olive Oil',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 } ]
+GET /products/ 200 44.085 ms - 4066
+GET /css.css 304 5.554 ms - -
+{ id: 'add' }
+GET /products/add 500 14.327 ms - 72
+error: invalid input syntax for integer: "add"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+GET /products/products/add 404 2.428 ms - 160
+{ id: 'products' }
+GET /products/products 500 8.295 ms - 77
+error: invalid input syntax for integer: "products"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+GET /products/products/new 404 0.992 ms - 160
+GET / 304 2.068 ms - -
+GET /css.css 304 0.446 ms - -
+GET /images/flowers-herbs.jpg 304 0.483 ms - -
+Listing all items in Product Table
+There are  15 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Olive Oil',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 } ]
+GET /products 304 10.569 ms - -
+GET /css.css 304 0.393 ms - -
+{ id: 'new' }
+GET /products/new 500 12.251 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: 'new' }
+GET /products/new 500 32.700 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+{ id: 'new' }
+GET /products/new 500 4.392 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/path-to-regexp/index.js:63
+  path = ('^' + path + (strict ? '' : path[path.length - 1] === '/' ? '?' : '/?'))
+                                               ^
+
+TypeError: Cannot read property 'length' of undefined
+    at pathtoRegexp (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/path-to-regexp/index.js:63:48)
+    at new Layer (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:45:17)
+    at Function.route (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:494:15)
+    at Function.proto.(anonymous function) [as get] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/router/boutiqueRouter.js:20:2)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: 'new' }
+GET /products/new 500 34.486 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+{ id: 'new' }
+GET /products/new 500 3.422 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: 'new' }
+GET /products/new 500 34.010 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: 'new' }
+GET /products/new 500 34.252 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+{ id: 'new' }
+GET /products/new 500 4.272 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+{ id: 'new' }
+GET /products/new 500 9.334 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+{ id: 'new' }
+GET /products/new 500 2.982 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: 'new' }
+GET /products/new 500 34.608 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+^C✔ ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+20:12 $ npm run dev
+
+> ladyd_boutique@1.0.0 dev /Users/student_23/wdi/unit02/projects/ladyd_boutique
+> nodemon server.js
+
+[nodemon] 1.17.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: 'new' }
+GET /products/new 500 35.664 ms - 72
+error: invalid input syntax for integer: "new"
+    at Connection.parseE (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:545:11)
+    at Connection.parseMessage (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:370:19)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:113:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /products/new 404 9.614 ms - 151
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /products/new 500 14.667 ms - 1645
+Error: Failed to lookup view "product/add" in views directory "/Users/student_23/wdi/unit02/projects/ladyd_boutique/views"
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at renderAddForm (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:28:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/index.js:275:10)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /products/new 500 19.178 ms - 2324
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/add.ejs:42
+    40|             <!-- Creating product drop-down list-->
+    41|               <select name="product.id">
+ >> 42|                 <% products.forEach((product) => { %>
+    43|                   <option value="<%=product.id%>"><%=product.product_name%></option>
+    44|                 <% }) %>
+    45|               </select>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:8)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at renderAddForm (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:28:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /products/new 500 18.770 ms - 2324
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/add.ejs:42
+    40|             <!-- Creating product drop-down list-->
+    41|               <select name="product.id">
+ >> 42|                 <% products.forEach((product) => { %>
+    43|                   <option value="<%=product.id%>"><%=product.product_name%></option>
+    44|                 <% }) %>
+    45|               </select>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:8)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at addOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:21:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /products/new 500 19.827 ms - 2348
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/add.ejs:42
+    40|             <!-- Creating product drop-down list-->
+    41|               <select name="product.id">
+ >> 42|                 <% products.forEach((product) => { %>
+    43|                   <option value="<%=product.id%>"><%=product.product_name%></option>
+    44|                 <% }) %>
+    45|               </select>
+
+Cannot read property 'forEach' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:16)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at addOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:21:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+GET /products/new 500 3.977 ms - 2363
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/add.ejs:42
+    40|             <!-- Creating product drop-down list-->
+    41|             <!--   <select name="product.id">
+ >> 42|                 <% products.forEach((product) => { %>
+    43|                   <option value="<%=product.id%>"><%=product.product_name%></option>
+    44|                 <% }) %>
+    45|               </select> -->
+
+Cannot read property 'forEach' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:16)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at addOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:21:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+rs
+[nodemon] starting `node server.js`
+Listening on port 3000
+^C✔ ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+20:25 $ npm run dev
+
+> ladyd_boutique@1.0.0 dev /Users/student_23/wdi/unit02/projects/ladyd_boutique
+> nodemon server.js
+
+[nodemon] 1.17.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /products/new 500 20.621 ms - 2363
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/add.ejs:42
+    40|             <!-- Creating product drop-down list-->
+    41|             <!--   <select name="product.id">
+ >> 42|                 <% products.forEach((product) => { %>
+    43|                   <option value="<%=product.id%>"><%=product.product_name%></option>
+    44|                 <% }) %>
+    45|               </select> -->
+
+Cannot read property 'forEach' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:16)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at addOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:21:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+GET /products/new 200 6.768 ms - 2032
+GET /css/css.css 404 2.175 ms - 150
+{ product_name: 'Black Pepper',
+  description: 'Tasty and acts as an antioxidant',
+  price: '3',
+  category_id: '4',
+  image_url: 'testing' }
+anonymous {
+  id: 16,
+  product_name: 'Black Pepper',
+  description: 'Tasty and acts as an antioxidant',
+  price: 3,
+  category_id: 4,
+  image_url: null }
+POST /products 200 62.188 ms - 157
+Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:170:12)
+    at done (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1004:10)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:257:5)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+{ product_name: 'Black Pepper',
+  description: 'Tasty and acts as an antioxidant',
+  price: '3',
+  category_id: '4',
+  image_url: 'testing' }
+anonymous {
+  id: 17,
+  product_name: 'Black Pepper',
+  description: 'Tasty and acts as an antioxidant',
+  price: 3,
+  category_id: 4,
+  image_url: null }
+POST /products 200 14.621 ms - 157
+Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:170:12)
+    at done (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1004:10)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:257:5)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ product_name: 'Black Pepper',
+  description: 'Tasty and acts as an antioxidant',
+  price: '3',
+  category_id: '4',
+  image_url: 'testing' }
+anonymous {
+  id: 18,
+  product_name: 'Black Pepper',
+  description: 'Tasty and acts as an antioxidant',
+  price: 3,
+  category_id: 4,
+  image_url: null }
+POST /products 200 71.796 ms - 2032
+GET /css/css.css 404 7.772 ms - 150
+{ product_name: 'jhkfkseksfk',
+  description: 'dkfjlsd',
+  price: '3',
+  category_id: '4',
+  image_url: 'dkfjls' }
+anonymous {
+  id: 19,
+  product_name: 'jhkfkseksfk',
+  description: 'dkfjlsd',
+  price: 3,
+  category_id: 4,
+  image_url: null }
+POST /products 200 24.822 ms - 2032
+GET /css/css.css 404 2.922 ms - 150
+{ product_name: 'jhkfkseksfk',
+  description: 'dkfjlsd',
+  price: '3',
+  category_id: '4',
+  image_url: 'dkfjls' }
+anonymous {
+  id: 20,
+  product_name: 'jhkfkseksfk',
+  description: 'dkfjlsd',
+  price: 3,
+  category_id: 4,
+  image_url: null }
+POST /products 200 11.326 ms - 2032
+GET /css/css.css 404 0.586 ms - 150
+Listing all items in Product Table
+There are  20 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Olive Oil',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 } ]
+GET /products 200 12.590 ms - 5290
+GET /css.css 304 2.245 ms - -
+Listing all items in Product Table
+There are  20 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Olive Oil',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 } ]
+GET /products 304 11.745 ms - -
+GET /css.css 304 0.506 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /products/new 304 24.060 ms - -
+GET /css/css.css 404 3.293 ms - 150
+{ product_name: 'fkskfk',
+  description: 'kfjsldkj',
+  price: '4',
+  category_id: '4',
+  image_url: '' }
+anonymous {
+  id: 21,
+  product_name: 'fkskfk',
+  description: 'kfjsldkj',
+  price: 4,
+  category_id: 4,
+  image_url: null }
+POST /products 302 55.236 ms - 54
+GET /index 404 1.379 ms - 144
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /products/new 304 15.375 ms - -
+GET /css/css.css 404 6.601 ms - 150
+{ product_name: 'fskfh',
+  description: 'dfjsdj',
+  price: '4',
+  category_id: '4',
+  image_url: '' }
+anonymous {
+  id: 22,
+  product_name: 'fskfh',
+  description: 'dfjsdj',
+  price: 4,
+  category_id: 4,
+  image_url: null }
+POST /products 302 59.024 ms - 62
+Listing all items in Product Table
+There are  22 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Olive Oil',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'fkskfk', description: 'kfjsldkj', price: 4 },
+  anonymous { product_name: 'fskfh', description: 'dfjsdj', price: 4 } ]
+GET /products 200 11.912 ms - 5713
+GET /css.css 304 2.610 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET /products/edit 500 24.611 ms - 2309
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/edit.ejs:16
+    14| 
+    15|      <div id="updateProduct">
+ >> 16|         <form action="/products/<%=product.id%>?_method=PUT" method="POST">
+    17|             <h4>Enter the category id number of the product you would like to update: </h4>
+    18|             <br><br>
+    19|             <input name="product_name" type="text" value="<%=product.product_name%>" />
+
+Cannot read property 'id' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:32)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at editOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:38:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 200 37.267 ms - 176
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/edit.ejs:16
+    14| 
+    15|      <div id="updateProduct">
+ >> 16|         <form action="/products/<%=product.id%>?_method=PUT" method="POST">
+    17|             <h4>Enter the category id number of the product you would like to update: </h4>
+    18|             <br><br>
+    19|             <input name="product_name" type="text" value="<%=product.product_name%>" />
+
+Cannot read property 'id' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:32)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at editOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:38:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 304 37.151 ms - -
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/edit.ejs:16
+    14| 
+    15|      <div id="updateProduct">
+ >> 16|         <form action="/products/<%=product.id%>?_method=PUT" method="POST">
+    17|             <h4>Enter the category id number of the product you would like to update: </h4>
+    18|             <br><br>
+    19|             <input name="product_name" type="text" value="<%=product.product_name%>" />
+
+Cannot read property 'id' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:32)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at editOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:38:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+^C✔ ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+20:48 $ npm run dev
+
+> ladyd_boutique@1.0.0 dev /Users/student_23/wdi/unit02/projects/ladyd_boutique
+> nodemon server.js
+
+[nodemon] 1.17.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 304 36.686 ms - -
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/edit.ejs:16
+    14| 
+    15|      <div id="updateProduct">
+ >> 16|         <form action="/products/<%=product.id%>?_method=PUT" method="POST">
+    17|             <h4>Enter the category id number of the product you would like to update: </h4>
+    18|             <br><br>
+    19|             <input name="product_name" type="text" value="<%=product.product_name%>" />
+
+Cannot read property 'id' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:32)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at editOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:38:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 500 50.098 ms - 2309
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/edit.ejs:16
+    14| 
+    15|      <div id="updateProduct">
+ >> 16|         <form action="/products/<%=product.id%>?_method=PUT" method="POST">
+    17|             <h4>Enter the category id number of the product you would like to update: </h4>
+    18|             <br><br>
+    19|             <input name="product_name" type="text" value="<%=product.product_name%>" />
+
+Cannot read property 'id' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:32)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at editOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:38:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 500 37.627 ms - 73
+TypeError: Cannot set property 'product' of undefined
+    at boutiqueModels.listOneProduct.then.data (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/boutiqueController.js:28:23)
+    at process._tickCallback (internal/process/next_tick.js:109:7)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 500 49.729 ms - 2309
+TypeError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/edit.ejs:16
+    14| 
+    15|      <div id="updateProduct">
+ >> 16|         <form action="/products/<%=product.id%>?_method=PUT" method="POST">
+    17|             <h4>Enter the category id number of the product you would like to update: </h4>
+    18|             <br><br>
+    19|             <input name="product_name" type="text" value="<%=product.product_name%>" />
+
+Cannot read property 'id' of undefined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:32)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at editOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:38:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 500 48.640 ms - 2546
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/edit.ejs:20
+    18|             <br><br>
+    19|             <input name="product_name" type="text" value="<%=product.product_name%>" />
+ >> 20|             <input name="description" type="text" value="<%description%>" />
+    21|             <input name="price" type="number" value="<%price%>" />
+    22|             <input name="category_id" type="number" value="<%number%>" >
+    23|             <input name="image_url" type="text" value="<%image_url%>" >
+
+description is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:17:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at editOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:38:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 200 18.164 ms - 1615
+GET /css/css.css 404 2.264 ms - 150
+{ product_name: 'Extra Virgin Olive Oil',
+  description: 'Cardiovascular support',
+  price: '18',
+  category_id: '2',
+  image_url: './public/images/herbal-bouquet.jpg',
+  id: '3' }
+PUT /products/3?_method=PUT 500 30.790 ms - 83
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 304 45.340 ms - -
+GET /css/css.css 404 4.979 ms - 150
+{ product_name: 'extra virgin Olive Oil',
+  description: 'Cardiovascular support',
+  price: '15',
+  category_id: '2',
+  image_url: './public/images/herbal-bouquet.jpg',
+  id: '3' }
+PUT /products/3?_method=PUT 500 25.419 ms - 83
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 304 49.587 ms - -
+GET /css/css.css 404 4.902 ms - 150
+{ product_name: 'Olive Oil2',
+  description: 'Cardiovascular support',
+  price: '15',
+  category_id: '2',
+  image_url: './public/images/herbal-bouquet.jpg',
+  id: '3' }
+PUT /products/3?_method=PUT 500 26.626 ms - 83
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 304 44.448 ms - -
+GET /css/css.css 404 4.847 ms - 150
+this is req.body in update: { product_name: 'Olive Oil2',
+  description: 'Cardiovascular support',
+  price: '15',
+  category_id: '2',
+  image_url: './public/images/herbal-bouquet.jpg',
+  id: '3' }
+PUT /products/3?_method=PUT 500 27.350 ms - 83
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 304 45.873 ms - -
+GET /css/css.css 404 3.828 ms - 150
+this is req.body in update: { product_name: 'Olive Oil',
+  description: 'Cardiovascular ',
+  price: '15',
+  category_id: '2',
+  image_url: './public/images/herbal-bouquet.jpg',
+  id: '3' }
+PUT /products/3?_method=PUT 500 32.599 ms - 76
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3/edit 304 49.454 ms - -
+GET /css/css.css 404 4.514 ms - 150
+this is req.body in update: { product_name: 'Olive Oil2',
+  description: 'Cardiovascular support',
+  price: '15',
+  category_id: '2',
+  image_url: './public/images/herbal-bouquet.jpg',
+  id: '3' }
+this is data in update: anonymous {
+  id: 3,
+  product_name: 'Olive Oil2',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+PUT /products/3?_method=PUT 302 31.848 ms - 66
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil2',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3 500 7.206 ms - 1906
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/show.ejs:14
+    12| 
+    13| 
+ >> 14| <%products.forEach((product) => { %>
+    15|   <div class="products">
+    16|    <h4>
+    17|     <%=product.product_name%>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at listOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:8:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+{ id: '3' }
+this is data: anonymous {
+  id: 3,
+  product_name: 'Olive Oil2',
+  description: 'Cardiovascular support',
+  price: 15,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/3 500 14.258 ms - 1906
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/show.ejs:14
+    12| 
+    13| 
+ >> 14| <%products.forEach((product) => { %>
+    15|   <div class="products">
+    16|    <h4>
+    17|     <%=product.product_name%>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at listOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:8:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+Listing all items in Product Table
+There are  22 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'fkskfk', description: 'kfjsldkj', price: 4 },
+  anonymous { product_name: 'fskfh', description: 'dfjsdj', price: 4 },
+  anonymous {
+    product_name: 'Olive Oil2',
+    description: 'Cardiovascular support',
+    price: 15 } ]
+GET /products/ 200 12.417 ms - 5716
+GET /css.css 304 3.530 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+Listing all items in Product Table
+There are  22 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'fkskfk', description: 'kfjsldkj', price: 4 },
+  anonymous { product_name: 'fskfh', description: 'dfjsdj', price: 4 },
+  anonymous {
+    product_name: 'Olive Oil2',
+    description: 'Cardiovascular support',
+    price: 15 } ]
+GET /products/ 304 45.775 ms - -
+GET /css.css 304 3.721 ms - -
+Listing all items in Product Table
+There are  22 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'fkskfk', description: 'kfjsldkj', price: 4 },
+  anonymous { product_name: 'fskfh', description: 'dfjsdj', price: 4 },
+  anonymous {
+    product_name: 'Olive Oil2',
+    description: 'Cardiovascular support',
+    price: 15 } ]
+GET /products/ 304 13.940 ms - -
+GET /css.css 304 0.470 ms - -
+{ id: '12' }
+this is data: anonymous {
+  id: 12,
+  product_name: 'Maca Powder',
+  description: 'Balances hormones',
+  price: 13,
+  category_id: 3,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/12/edit 200 12.134 ms - 1613
+GET /css/css.css 404 3.327 ms - 150
+{ id: '18' }
+this is data: anonymous {
+  id: 18,
+  product_name: 'Black Pepper',
+  description: 'Tasty and acts as an antioxidant',
+  price: 3,
+  category_id: 4,
+  image_url: null }
+GET /products/18/edit 200 3.251 ms - 1594
+GET /css/css.css 404 0.812 ms - 150
+{ id: '20' }
+this is data: anonymous {
+  id: 20,
+  product_name: 'jhkfkseksfk',
+  description: 'dkfjlsd',
+  price: 3,
+  category_id: 4,
+  image_url: null }
+GET /products/20/edit 200 9.384 ms - 1568
+GET /css/css.css 404 0.529 ms - 150
+this is req.body in update: { product_name: 'jhkfkseksfkhelllo',
+  description: 'dkfjlsd',
+  price: '3',
+  category_id: '4',
+  image_url: '',
+  id: '20' }
+this is data in update: anonymous {
+  id: 20,
+  product_name: 'jhkfkseksfkhelllo',
+  description: 'dkfjlsd',
+  price: 3,
+  category_id: 4,
+  image_url: '' }
+PUT /products/20?_method=PUT 302 34.443 ms - 62
+Listing all items in Product Table
+There are  22 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'fkskfk', description: 'kfjsldkj', price: 4 },
+  anonymous { product_name: 'fskfh', description: 'dfjsdj', price: 4 },
+  anonymous {
+    product_name: 'Olive Oil2',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'jhkfkseksfkhelllo',
+    description: 'dkfjlsd',
+    price: 3 } ]
+GET /products 200 5.307 ms - 5734
+GET /css.css 304 0.263 ms - -
+{ id: '21' }
+this is data: anonymous {
+  id: 21,
+  product_name: 'fkskfk',
+  description: 'kfjsldkj',
+  price: 4,
+  category_id: 4,
+  image_url: null }
+GET /products/21 500 16.562 ms - 1906
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/show.ejs:14
+    12| 
+    13| 
+ >> 14| <%products.forEach((product) => { %>
+    15|   <div class="products">
+    16|    <h4>
+    17|     <%=product.product_name%>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at listOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:8:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+{ id: '20' }
+this is data: anonymous {
+  id: 20,
+  product_name: 'jhkfkseksfkhelllo',
+  description: 'dkfjlsd',
+  price: 3,
+  category_id: 4,
+  image_url: '' }
+GET /products/20 500 11.245 ms - 1906
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/show.ejs:14
+    12| 
+    13| 
+ >> 14| <%products.forEach((product) => { %>
+    15|   <div class="products">
+    16|    <h4>
+    17|     <%=product.product_name%>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at listOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:8:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+{ id: '19' }
+this is data: anonymous {
+  id: 19,
+  product_name: 'jhkfkseksfk',
+  description: 'dkfjlsd',
+  price: 3,
+  category_id: 4,
+  image_url: null }
+GET /products/19 500 19.335 ms - 1906
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/show.ejs:14
+    12| 
+    13| 
+ >> 14| <%products.forEach((product) => { %>
+    15|   <div class="products">
+    16|    <h4>
+    17|     <%=product.product_name%>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at listOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:8:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+Listing all items in Product Table
+There are  22 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'fkskfk', description: 'kfjsldkj', price: 4 },
+  anonymous { product_name: 'fskfh', description: 'dfjsdj', price: 4 },
+  anonymous {
+    product_name: 'Olive Oil2',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'jhkfkseksfkhelllo',
+    description: 'dkfjlsd',
+    price: 3 } ]
+GET /products/ 200 17.744 ms - 5734
+GET /css.css 304 5.395 ms - -
+{ id: '15' }
+this is data: anonymous {
+  id: 15,
+  product_name: 'Ubiquinol',
+  description: 'Supports a healthy heart',
+  price: 15,
+  category_id: 4,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/15 500 6.387 ms - 1906
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/show.ejs:14
+    12| 
+    13| 
+ >> 14| <%products.forEach((product) => { %>
+    15|   <div class="products">
+    16|    <h4>
+    17|     <%=product.product_name%>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at listOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:8:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+GET /product/15 404 0.949 ms - 149
+GET /products15 404 0.709 ms - 149
+
+^C^C
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 20…39] 
+21:14 $ npm run dev
+
+> ladyd_boutique@1.0.0 dev /Users/student_23/wdi/unit02/projects/ladyd_boutique
+> nodemon server.js
+
+[nodemon] 1.17.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET / 200 16.231 ms - 387
+Listing all items in Product Table
+There are  22 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'fkskfk', description: 'kfjsldkj', price: 4 },
+  anonymous { product_name: 'fskfh', description: 'dfjsdj', price: 4 },
+  anonymous {
+    product_name: 'Olive Oil2',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'jhkfkseksfkhelllo',
+    description: 'dkfjlsd',
+    price: 3 } ]
+GET /products 200 39.357 ms - 5734
+{ id: '19' }
+this is data: anonymous {
+  id: 19,
+  product_name: 'jhkfkseksfk',
+  description: 'dkfjlsd',
+  price: 3,
+  category_id: 4,
+  image_url: null }
+GET /products/19 500 17.384 ms - 1906
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/show.ejs:14
+    12| 
+    13| 
+ >> 14| <%products.forEach((product) => { %>
+    15|   <div class="products">
+    16|    <h4>
+    17|     <%=product.product_name%>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at listOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:8:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET / 304 18.459 ms - -
+GET /css.css 304 3.570 ms - -
+GET /images/flowers-herbs.jpg 304 0.981 ms - -
+GET / 304 2.993 ms - -
+GET /css.css 304 0.429 ms - -
+Listing all items in Product Table
+There are  22 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'fkskfk', description: 'kfjsldkj', price: 4 },
+  anonymous { product_name: 'fskfh', description: 'dfjsdj', price: 4 },
+  anonymous {
+    product_name: 'Olive Oil2',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'jhkfkseksfkhelllo',
+    description: 'dkfjlsd',
+    price: 3 } ]
+GET /products 304 31.569 ms - -
+GET /css.css 304 0.565 ms - -
+Listing all items in Product Table
+There are  22 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'fkskfk', description: 'kfjsldkj', price: 4 },
+  anonymous { product_name: 'fskfh', description: 'dfjsdj', price: 4 },
+  anonymous {
+    product_name: 'Olive Oil2',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'jhkfkseksfkhelllo',
+    description: 'dkfjlsd',
+    price: 3 } ]
+GET /products/ 304 11.283 ms - -
+GET /css.css 304 0.383 ms - -
+Listing all items in Product Table
+There are  22 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'fkskfk', description: 'kfjsldkj', price: 4 },
+  anonymous { product_name: 'fskfh', description: 'dfjsdj', price: 4 },
+  anonymous {
+    product_name: 'Olive Oil2',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'jhkfkseksfkhelllo',
+    description: 'dkfjlsd',
+    price: 3 } ]
+GET /products/ 304 11.387 ms - -
+GET /css.css 304 1.632 ms - -
+Listing all items in Product Table
+There are  22 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'fkskfk', description: 'kfjsldkj', price: 4 },
+  anonymous { product_name: 'fskfh', description: 'dfjsdj', price: 4 },
+  anonymous {
+    product_name: 'Olive Oil2',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'jhkfkseksfkhelllo',
+    description: 'dkfjlsd',
+    price: 3 } ]
+GET /products/ 304 13.939 ms - -
+GET /css.css 304 4.177 ms - -
+Listing all items in Product Table
+There are  22 items in the Products table. 
+[ anonymous {
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5 },
+  anonymous {
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7 },
+  anonymous {
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4 },
+  anonymous {
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9 },
+  anonymous {
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7 },
+  anonymous {
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5 },
+  anonymous {
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3 },
+  anonymous {
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2 },
+  anonymous {
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12 },
+  anonymous {
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18 },
+  anonymous {
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13 },
+  anonymous {
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25 },
+  anonymous {
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30 },
+  anonymous {
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous {
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3 },
+  anonymous { product_name: 'jhkfkseksfk', description: 'dkfjlsd', price: 3 },
+  anonymous { product_name: 'fkskfk', description: 'kfjsldkj', price: 4 },
+  anonymous { product_name: 'fskfh', description: 'dfjsdj', price: 4 },
+  anonymous {
+    product_name: 'Olive Oil2',
+    description: 'Cardiovascular support',
+    price: 15 },
+  anonymous {
+    product_name: 'jhkfkseksfkhelllo',
+    description: 'dkfjlsd',
+    price: 3 } ]
+GET /products/ 304 23.872 ms - -
+GET /css.css 304 1.027 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+Listing all items in Product Table
+There are  22 items in the Products table. 
+[ anonymous {
+    id: 1,
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5,
+    category_id: 1,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 2,
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7,
+    category_id: 1,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 4,
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4,
+    category_id: 3,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 5,
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9,
+    category_id: 2,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 6,
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7,
+    category_id: 3,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 7,
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5,
+    category_id: 1,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 8,
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3,
+    category_id: 1,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 9,
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2,
+    category_id: 3,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 10,
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12,
+    category_id: 2,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 11,
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18,
+    category_id: 3,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 12,
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13,
+    category_id: 3,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 13,
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25,
+    category_id: 4,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 14,
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30,
+    category_id: 4,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 15,
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15,
+    category_id: 4,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 16,
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3,
+    category_id: 4,
+    image_url: null },
+  anonymous {
+    id: 17,
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3,
+    category_id: 4,
+    image_url: null },
+  anonymous {
+    id: 18,
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3,
+    category_id: 4,
+    image_url: null },
+  anonymous {
+    id: 19,
+    product_name: 'jhkfkseksfk',
+    description: 'dkfjlsd',
+    price: 3,
+    category_id: 4,
+    image_url: null },
+  anonymous {
+    id: 21,
+    product_name: 'fkskfk',
+    description: 'kfjsldkj',
+    price: 4,
+    category_id: 4,
+    image_url: null },
+  anonymous {
+    id: 22,
+    product_name: 'fskfh',
+    description: 'dfjsdj',
+    price: 4,
+    category_id: 4,
+    image_url: null },
+  anonymous {
+    id: 3,
+    product_name: 'Olive Oil2',
+    description: 'Cardiovascular support',
+    price: 15,
+    category_id: 2,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 20,
+    product_name: 'jhkfkseksfkhelllo',
+    description: 'dkfjlsd',
+    price: 3,
+    category_id: 4,
+    image_url: '' } ]
+GET /products/ 200 54.582 ms - 7796
+GET /css.css 304 3.844 ms - -
+{ id: '12' }
+this is data: anonymous {
+  id: 12,
+  product_name: 'Maca Powder',
+  description: 'Balances hormones',
+  price: 13,
+  category_id: 3,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/12 500 16.284 ms - 1906
+ReferenceError: /Users/student_23/wdi/unit02/projects/ladyd_boutique/views/products/show.ejs:14
+    12| 
+    13| 
+ >> 14| <%products.forEach((product) => { %>
+    15|   <div class="products">
+    16|    <h4>
+    17|     <%=product.product_name%>
+
+products is not defined
+    at eval (eval at compile (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:592:12), <anonymous>:11:7)
+    at returnedFn (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:623:17)
+    at tryHandleCache (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/ejs/lib/ejs.js:480:10)
+    at View.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/response.js:1008:7)
+    at listOneProduct (/Users/student_23/wdi/unit02/projects/ladyd_boutique/controllers/viewController.js:8:7)
+    at Layer.handle [as handle_request] (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/express/lib/router/layer.js:95:5)
+GET / 304 2.854 ms - -
+GET /css.css 304 0.720 ms - -
+GET /images/flowers-herbs.jpg 304 0.532 ms - -
+{ id: '5' }
+this is data: anonymous {
+  id: 5,
+  product_name: 'Tea Tree Oil',
+  description: 'Posesses antifungul and antiseptic properties',
+  price: 9,
+  category_id: 2,
+  image_url: './public/images/herbal-bouquet.jpg' }
+GET /products/5 200 11.881 ms - 746
+GET /css/css.css 404 3.219 ms - 150
+GET /public/js/script.js 404 4.190 ms - 158
+GET /products/public/images/herbal-bouquet.jpg 404 5.258 ms - 180
+{ id: '19' }
+this is data: anonymous {
+  id: 19,
+  product_name: 'jhkfkseksfk',
+  description: 'dkfjlsd',
+  price: 3,
+  category_id: 4,
+  image_url: null }
+GET /products/19 200 8.683 ms - 712
+GET /css/css.css 404 1.147 ms - 150
+GET /public/js/script.js 404 1.317 ms - 158
+{ id: '19' }
+\q
+^C^C
+✘-1 ~/wdi/unit02/projects/ladyd_boutique [master|✚ 21…40] 
+21:56 $ npm run dev
+
+> ladyd_boutique@1.0.0 dev /Users/student_23/wdi/unit02/projects/ladyd_boutique
+> nodemon server.js
+
+[nodemon] 1.17.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Listening on port 3000
+GET / 304 16.042 ms - -
+GET /css.css 304 4.753 ms - -
+GET /images/flowers-herbs.jpg 304 1.153 ms - -
+{ id: '19' }
+GET /products/19 500 28.676 ms - 63
+QueryResultError: 0
+    at QueryResultError.Error (native)
+    at new QueryResultError (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg-promise/lib/errors/queryResult.js:131:24)
+    at Query.ctx.db.client.query (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg-promise/lib/query.js:209:41)
+    at Query.handleReadyForQuery (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/query.js:126:10)
+    at Connection.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/client.js:163:19)
+    at emitOne (events.js:96:13)
+    at Connection.emit (events.js:188:7)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:117:12)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+{ id: '19' }
+GET /products/19 500 3.763 ms - 63
+QueryResultError: 0
+    at QueryResultError.Error (native)
+    at new QueryResultError (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg-promise/lib/errors/queryResult.js:131:24)
+    at Query.ctx.db.client.query (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg-promise/lib/query.js:209:41)
+    at Query.handleReadyForQuery (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/query.js:126:10)
+    at Connection.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/client.js:163:19)
+    at emitOne (events.js:96:13)
+    at Connection.emit (events.js:188:7)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:117:12)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+{ id: '20' }
+this is data: anonymous {
+  id: 20,
+  product_name: 'jhkfkseksfkhelllo',
+  description: 'dkfjlsd',
+  price: 3,
+  category_id: 4,
+  image_url: '' }
+GET /products/20 200 12.733 ms - 725
+GET /css/css.css 404 5.652 ms - 150
+GET /public/js/script.js 404 6.765 ms - 158
+{ id: '20' }
+this is data: anonymous {
+  id: 20,
+  product_name: 'jhkfkseksfkhelllo',
+  description: 'dkfjlsd',
+  price: 3,
+  category_id: 4,
+  image_url: '' }
+GET /products/20 200 9.846 ms - 724
+GET /css/css.css 404 1.071 ms - 150
+GET /public/js/script.js 404 1.274 ms - 158
+{ id: '20' }
+DELETE /products/20?_method=DELETE - - ms - -
+{ id: '20' }
+GET /products/20 500 8.656 ms - 63
+QueryResultError: 0
+    at QueryResultError.Error (native)
+    at new QueryResultError (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg-promise/lib/errors/queryResult.js:131:24)
+    at Query.ctx.db.client.query (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg-promise/lib/query.js:209:41)
+    at Query.handleReadyForQuery (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/query.js:126:10)
+    at Connection.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/client.js:163:19)
+    at emitOne (events.js:96:13)
+    at Connection.emit (events.js:188:7)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:117:12)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '21' }
+this is data: anonymous {
+  id: 21,
+  product_name: 'fkskfk',
+  description: 'kfjsldkj',
+  price: 4,
+  category_id: 4,
+  image_url: null }
+GET /products/21 200 45.069 ms - 702
+GET /css/css.css 404 6.297 ms - 150
+GET /public/js/script.js 404 7.367 ms - 158
+{ id: '21' }
+DELETE /products/21?_method=DELETE 302 26.302 ms - 62
+Listing all items in Product Table
+There are  19 items in the Products table. 
+[ anonymous {
+    id: 1,
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5,
+    category_id: 1,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 2,
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7,
+    category_id: 1,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 4,
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4,
+    category_id: 3,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 5,
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9,
+    category_id: 2,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 6,
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7,
+    category_id: 3,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 7,
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5,
+    category_id: 1,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 8,
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3,
+    category_id: 1,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 9,
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2,
+    category_id: 3,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 10,
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12,
+    category_id: 2,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 11,
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18,
+    category_id: 3,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 12,
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13,
+    category_id: 3,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 13,
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25,
+    category_id: 4,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 14,
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30,
+    category_id: 4,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 15,
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15,
+    category_id: 4,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 16,
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3,
+    category_id: 4,
+    image_url: null },
+  anonymous {
+    id: 17,
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3,
+    category_id: 4,
+    image_url: null },
+  anonymous {
+    id: 18,
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3,
+    category_id: 4,
+    image_url: null },
+  anonymous {
+    id: 22,
+    product_name: 'fskfh',
+    description: 'dfjsdj',
+    price: 4,
+    category_id: 4,
+    image_url: null },
+  anonymous {
+    id: 3,
+    product_name: 'Olive Oil2',
+    description: 'Cardiovascular support',
+    price: 15,
+    category_id: 2,
+    image_url: './public/images/herbal-bouquet.jpg' } ]
+GET /products 200 10.852 ms - 6901
+GET /css.css 304 1.823 ms - -
+QueryResultError: 0         
+    at QueryResultError.Error (native)
+    at new QueryResultError (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg-promise/lib/errors/queryResult.js:131:24)
+    at Query.ctx.db.client.query (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg-promise/lib/query.js:209:41)
+    at Query.handleReadyForQuery (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/query.js:126:10)
+    at Connection.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/client.js:163:19)
+    at emitOne (events.js:96:13)
+    at Connection.emit (events.js:188:7)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:117:12)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+{ id: '20' }
+this is data: anonymous {
+  id: 20,
+  product_name: 'jhkfkseksfkhelllo',
+  description: 'dkfjlsd',
+  price: 3,
+  category_id: 4,
+  image_url: '' }
+GE0 12.733 ms - 725
+GET /css/css.css 404 5.652 ms - 150
+GET /public/js/script.js 404 6.765 ms - 158
+{ id: '20' }
+this is data: anonymous {
+  id: 20,
+  product_name: 'jhkfkseksfkhelllo',
+  description: 'dkfjlsd',
+  price: 3,
+  category_id: 4,
+  image_url: '' }
+GET /products/20 200 9.846 ms - 724
+GET /css/css.css 404 1.071 ms - 150
+GET /public/js/script.js 404 1.274 ms - 158
+{ id: '20' }
+DELETE /products/20?_method=DELETE - - ms - -
+{ id: '20' }
+GET /products/20 500 8.656 ms - 63
+QueryResultError: 0
+    at QueryResultError.Error (native)
+    at new QueryResultError (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg-promise/lib/errors/queryResult.js:131:24)
+    at Query.ctx.db.client.query (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg-promise/lib/query.js:209:41)
+    at Query.handleReadyForQuery (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/query.js:126:10)
+    at Connection.<anonymous> (/Users/student_23/wdi/unit02/projes/ladyd_boutique/node_modules/pg/lib/client.js:163:19)
+    at emitOne (events.js:96:13)
+    at Connection.emit (events.js:188:7)
+    at Socket.<anonymous> (/Users/student_23/wdi/unit02/projects/ladyd_boutique/node_modules/pg/lib/connection.js:117:12)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on port 3000
+{ id: '21' }
+this is data: anonymous {
+  id: 21,
+  product_name: 'fkskfk',
+  description: 'kfjsldkj',
+  price: 4,
+  category_id: 4,
+  image_url: null }
+GET /products/21 200 45.069 ms - 702
+GET /css/css.css 404 6.297 ms - 150
+GET /public/js/script.js 404 7.367 ms - 158
+{ id: '21' }
+DELETE /products/21?_method=DELETE 302 26.302 ms - 62
+Listing all items in Product Table
+There are  19 items in the Products table. 
+[ anonymous {
+    id: 1,
+    product_name: 'Pine-Tar bar',
+    description: 'antseptic cleanser',
+    price: 5,
+    category_id: 1,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 2,
+    product_name: 'Lavender bar',
+    description: 'fragrant bar',
+    price: 7,
+    category_id: 1,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 4,
+    product_name: 'Broccoli Rabe',
+    description: 'Eliminates nausea',
+    price: 4,
+    category_id: 3,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 5,
+    product_name: 'Tea Tree Oil',
+    description: 'Posesses antifungul and antiseptic properties',
+    price: 9,
+    category_id: 2,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 6,
+    product_name: 'Ginger',
+    description: 'Increases circulation',
+    price: 7,
+    category_id: 3,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 7,
+    product_name: 'Chamomile bar',
+    description: 'Calming aromatherapy',
+    price: 5,
+    category_id: 1,
+    image_url: './pub.jpg' },
+  anonymous {
+    id: 8,
+    product_name: 'Shea Butter bar',
+    description: 'Moisturizes and conditions skin',
+    price: 3,
+    category_id: 1,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 9,
+    product_name: 'Cayenne Pepper',
+    description: 'Increases metabolism',
+    price: 2,
+    category_id: 3,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 10,
+    product_name: 'Clove Oil',
+    description: 'Antiseptic and aromatic',
+    price: 12,
+    category_id: 2,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 11,
+    product_name: 'Raw Cacao Powder',
+    description: 'Provides excellent circulation support',
+    price: 18,
+    category_id: 3,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 12,
+    product_name: 'Maca Powder',
+    description: 'Balances hormones',
+    price: 13,
+    category_id: 3,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 13,
+    product_name: 'Raw vitamin C',
+    description: 'Supplies the body with antioxidants and fights cellular rusting',
+    price: 25,
+    category_id: 4,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 14,
+    product_name: 'Probiotics',
+    description: 'Restores good bacteria in gut',
+    price: 30,
+    category_id: 4,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 15,
+    product_name: 'Ubiquinol',
+    description: 'Supports a healthy heart',
+    price: 15,
+    category_id: 4,
+    image_url: './public/images/herbal-bouquet.jpg' },
+  anonymous {
+    id: 16,
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3,
+    category_id: 4,
+    image_url: null },
+  anonymous {
+    id: 17,
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3,
+    category_id: 4,
+    image_url: null },
+  anonymous {
+    id: 18,
+    product_name: 'Black Pepper',
+    description: 'Tasty and acts as an antioxidant',
+    price: 3,
+    category_id: 4,
+    image_url: null },
+  anonymous {
+    id: 22,
+    product_name: 'fskfh',
+    description: 'dfjsdj',
+    price: 4,
+    category_id: 4,
+    image_url: null },
+  anonymous {
+    id: 3,
+    product_name: 'Olive Oil2',
+    description: 'Cardiovascular support',
+    price: 15,
+    category_id: 2,
+    image_url: './public/images/herbal-bouquet.jpg' } ]
+GET /products 200 10.852 ms - 6901
+
+
 

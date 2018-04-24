@@ -6,7 +6,7 @@ const PORT = 3000;
 const app = express();
 const pgp = require('pg-promise');
 const path = require('path');
-
+const methodoverride = require("method-override");
 //setting up router
 const boutiqueRouter = require('./router/boutiqueRouter');
 
@@ -20,13 +20,16 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')))
 
-// app.get('/', (req, res) => {
-//   res.send('hi');
-//   // res.render('index',
-//   //   {products: });
-// });
+//making more methods available in HTML EJS form
+app.use(methodoverride('_method'))
 
-app.use('/', boutiqueRouter);
+//rending landing page for root route
+app.get('/', (req, res) => {
+  res.render('index');
+});
+
+//all other views are being rendered via /products route
+app.use('/products', boutiqueRouter);
 
 app.listen(PORT, () => {
 console.log(`Listening on port ${PORT}`);

@@ -14,23 +14,20 @@ function showError(err, req, res, next) {
 
 boutiqueRouter.route('/')
 .get(boutiqueController.getAllProducts, boutiqueViewController.listAllProducts, showError)
-.post(boutiqueController.createProduct, boutiqueViewController.addOneProduct);
+.post(boutiqueController.createProduct, boutiqueViewController.viewAddedProduct);
 
-boutiqueRouter.get('/new', boutiqueViewController.addOneProduct);
-  // redirect model to be fixed -  boutiqueViewController.viewAddedProduct
+boutiqueRouter.route('/new')
+.get(boutiqueViewController.addOneProduct);
 
+boutiqueRouter.route('/:id/edit')
+.get(boutiqueController.getOneProduct, boutiqueViewController.editOneProduct);
 
 boutiqueRouter.route('/:id')
 .get(boutiqueController.getOneProduct, boutiqueViewController.listOneProduct)
-.put(boutiqueController.updateProduct, boutiqueViewController.editOneProduct)
+.put(boutiqueController.updateProduct)
 .delete(boutiqueController.destroyProduct);
 
 
 module.exports = boutiqueRouter;
 
 
-// boutiqueRouter.get('/', boutiqueController.getAllProducts);
-// boutiqueRouter.post('/', boutiqueController.createProduct);
-// boutiqueRouter.get('/:id', boutiqueController.getOneProduct);
-// boutiqueRouter.put('/:id', boutiqueController.updateProduct);
-// boutiqueRouter.delete('/:id', boutiqueController.destroyProduct);

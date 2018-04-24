@@ -15,7 +15,7 @@
     Please feel free to add a healing item that you would like to see listed in our product line.</p>
 
      <div id="newProduct">
-        <form action="/" method="POST">
+        <form action="/products" method="POST">
             <h4>Please Tell Me Who You Are!</h4>
             <label for="username">Name:</label>
             <input type="text" id="username"  placeholder="Enter your full name" />
@@ -35,8 +35,19 @@
             <input name= "description" type="text" id="description"  placeholder="Enter a brief description" />
             <input name= "price" type="number" id="price"  placeholder="Enter a suggested price" />
             <input name= "category_id" type="number" id="number"  placeholder="Enter a category type number ( 1 for oil, 2 for soap, 3 for food and 4 for supplement)" />
-            <input type="submit" value="Submit" />
+            <input name="image_url" type="text" placeholder="Image file address" /><br>
+
+
+
+              <br><br>
+              <input type="submit" value="Add your suggested product" />
         </form>
+
+    </div>
+
+    <div>  <a href="/products"> Return to Product List </a> </div>
+
+
 </body>
 
 </html>

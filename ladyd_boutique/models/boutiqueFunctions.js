@@ -4,7 +4,7 @@ const dbBoutique = require('../config/boutiqueConnection');
 //lists entire products table when root path is entered local:3000/ , index.ejs is rendered
 function listAllProducts() {
   const healthyPromise = dbBoutique.any
-  ('SELECT product_name, description, price FROM products');
+  ('SELECT * FROM products');
   return healthyPromise;
 }
 
@@ -17,6 +17,7 @@ function listOneProduct(id) {
   );
   return healthyPromise;
 }
+
 //adds an item to the product table using /new route; renders add.ejs form, then submit button triggers POST request
 function addProduct(product) {
   const healthyPromise = dbBoutique.one(
@@ -27,12 +28,13 @@ function addProduct(product) {
   );
   return healthyPromise;
 }
+
+
 //updates one item based on id number entered after root route local:3000/id
-//currently experiencing error
 function updateProduct(product) {
   const healthyPromise = dbBoutique.one(`
     UPDATE products
-    SET content = $/product_name/, $/description/, $/price/, $/category_id/
+    SET product_name = $/product_name/, description = $/description/, price = $/price/, category_id = $/category_id/, image_url = $/image_url/
     WHERE id = $/id/
     RETURNING *
     `, product

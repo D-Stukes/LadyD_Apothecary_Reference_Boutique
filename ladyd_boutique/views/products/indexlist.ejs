@@ -18,9 +18,12 @@
 
 <%products.forEach((product) => { %>
   <div class="products">
-   <h5>
-   <%=JSON.stringify(product)%>
-   </h5>
+   <h4>
+    <%=product.product_name%>
+    <a href="/products/<%=product.id%>"><%=product.product_name%> </a>
+   <!-- <%=JSON.stringify(product)%> -->
+   <img src="<%=product.img_url%>" />
+   </h4>
   </div>
  <% })%>
 

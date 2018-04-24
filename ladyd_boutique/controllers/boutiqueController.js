@@ -1,6 +1,7 @@
 const boutiqueModels = require('../models/boutiqueFunctions');
 const boutiqueRouter = require('express').Router();
 
+
 function getAllProducts(req, res, next) {
   console.log('Listing all items in Product Table');
   boutiqueModels.listAllProducts()
@@ -19,11 +20,12 @@ function getOneProduct(req, res, next){
 console.log(req.params);
   boutiqueModels.listOneProduct(req.params.id)
   .then(data => {
-    console.log(data);
-    res.json({
-      status: 'ok',
-      product: data
-    });
+    console.log("this is data:", data);
+    // res.json({
+    //   status: 'ok',
+    //   product: data
+    // });
+    res.locals.product = data;
     next();
   })
   .catch(err => {
@@ -40,10 +42,10 @@ console.log(req.body);
   boutiqueModels.addProduct(req.body)
   .then(data => {
     console.log(data);
-    res.json({
-      status: 'ok',
-      product: data
-    })
+    // res.json({
+    //   status: 'ok',
+    //   product: data
+    // })
     next();
   })
   .catch(err => {
@@ -55,16 +57,17 @@ console.log(req.body);
   })
 }
 
-function updateProduct(req, res){
+function updateProduct(req, res, next){
  req.body.id = req.params.id;
-  console.log(req.body);
+  console.log('this is req.body in update:', req.body);
   boutiqueModels.updateProduct(req.body)
   .then(data => {
-    console.log(data);
-    res.json({
-      status: 'ok',
-      product: data
-    })
+    console.log("this is data in update:", data);
+    res.redirect(`/products`)
+    // res.json({
+    //   status: 'ok',
+    //   product: data
+    // })
   })
   .catch(err => {
     res.status(500).json({
@@ -78,10 +81,11 @@ function destroyProduct(req, res){
   console.log(req.params);
   boutiqueModels.destroyProduct(req.params.id)
   .then(() => {
-    res.json({
-      status: 'ok',
-      message: `Deleted product item with id ${req.params.id}`
-    });
+    // res.json({
+    //   status: 'ok',
+    //   message: `Deleted product item with id ${req.params.id}`
+    // });
+        res.redirect(`/products`)
   })
   .catch(err => {
     res.status(500).json({
