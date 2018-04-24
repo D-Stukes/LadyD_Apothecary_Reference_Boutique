@@ -2,7 +2,7 @@
   background-image: url('/images/flowers-herbs.jpg');
   background-size: cover;
 }
-
+/*styles the div that holds the links to the product table*/
 .product-linkbox{
   margin-left:400px;
   margin-top: 100px;
@@ -10,7 +10,6 @@
   font-size: 40px;
   background-color: rgb(230, 255, 230,.8);
 }
-
 
 .product-links{
   font-size: 30px;
@@ -21,6 +20,7 @@
   top: 500px;
 }
 
+/*places two pictures on landing page and animates it*/
 .mainpic1{
   top:425px;
   left:0;
@@ -69,12 +69,12 @@
 
 
 .product-list{
-  top: 100px;
+  top: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('/images/bkgrd-peppermint-leaves.jpg');
   background-attachment: fixed;
-  flex:3;
+  flex:2;
 }
 
 .list-back{
@@ -97,7 +97,7 @@
 }*/
 
 .show-product{
-  background-image: url('/images/bkgd1-HerbBasket.jpeg');
+  background-image: url('/images/pink-tulips.jpeg');
   background-size: cover;
 }
 
