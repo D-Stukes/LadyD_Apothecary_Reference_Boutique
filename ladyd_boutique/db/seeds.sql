@@ -24,7 +24,7 @@ INSERT INTO products
 VALUES
   ('Pine-Tar bar', 'antseptic cleanser', 5.00,  1, 'images/herbal-bouquet.jpg'),
   ('Lavender bar', 'fragrant bar', 7.00, 1, 'images/herbal-bouquet.jpg'),
-  ('Olive Oil', 'Cardiovascular support', 15.00, 2, 'images/herbal-bouquet.jpg'),
+  ('Olive Oil', 'Cardiovascular support', 15.00, 2, 'https://cdn.pixabay.com/photo/2018/01/27/21/04/oil-3112195__340.jpg'),
   ('Broccoli Rabe','Eliminates nausea', 4.00, 3, 'images/giant-dandelion.jpg'),
   ('Tea Tree Oil', 'Posesses antifungul and antiseptic properties', 9.00, 2, 'images/herbal-bouquet.jpg'),
   ('Ginger', 'Increases circulation', 6.50, 3, 'images/herbal-bouquet.jpg'),
