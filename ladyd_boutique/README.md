@@ -1,6 +1,9 @@
 # LadyD_Apothecary_Reference_Boutique
 # README FILE
 
+##link to youtube video
+https://youtu.be/ado8E4-H7Qs
+
 #### For Database Relationships, any further presentation of User Story, please see other files stored in github repository for this project:
 https://github.com/Lady-D/LadyD_Apothecary_Reference_Boutique
 
